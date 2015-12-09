@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC62F11D1C18BD9100B5657C /* crvenaTipka1.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F11C1C18BD9100B5657C /* crvenaTipka1.png */; };
 		EC678F931C1891FD003D80D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678F921C1891FD003D80D4 /* main.m */; };
 		EC678F961C1891FD003D80D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678F951C1891FD003D80D4 /* AppDelegate.m */; };
 		EC678F991C1891FD003D80D4 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678F981C1891FD003D80D4 /* GameScene.m */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC62F11C1C18BD9100B5657C /* crvenaTipka1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crvenaTipka1.png; path = HighChicken/crvenaTipka1.png; sourceTree = "<group>"; };
 		EC678F8E1C1891FD003D80D4 /* HighChicken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighChicken.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC678F921C1891FD003D80D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC678F941C1891FD003D80D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,9 +88,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC62F11E1C18BD9A00B5657C /* slike */ = {
+			isa = PBXGroup;
+			children = (
+				EC62F11C1C18BD9100B5657C /* crvenaTipka1.png */,
+			);
+			name = slike;
+			sourceTree = "<group>";
+		};
 		EC678F851C1891FD003D80D4 = {
 			isa = PBXGroup;
 			children = (
+				EC62F11E1C18BD9A00B5657C /* slike */,
 				EC678F901C1891FD003D80D4 /* HighChicken */,
 				EC678FAF1C1891FD003D80D4 /* HighChickenTests */,
 				EC678FBA1C1891FD003D80D4 /* HighChickenUITests */,
@@ -258,6 +269,7 @@
 			files = (
 				EC678F9B1C1891FD003D80D4 /* GameScene.sks in Resources */,
 				EC678FA61C1891FD003D80D4 /* LaunchScreen.storyboard in Resources */,
+				EC62F11D1C18BD9100B5657C /* crvenaTipka1.png in Resources */,
 				EC678FA31C1891FD003D80D4 /* Assets.xcassets in Resources */,
 				EC678FA11C1891FD003D80D4 /* Main.storyboard in Resources */,
 			);
@@ -518,6 +530,7 @@
 				EC678FC21C1891FD003D80D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC678FC31C1891FD003D80D4 /* Build configuration list for PBXNativeTarget "HighChickenTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +539,7 @@
 				EC678FC51C1891FD003D80D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC678FC61C1891FD003D80D4 /* Build configuration list for PBXNativeTarget "HighChickenUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +548,7 @@
 				EC678FC81C1891FD003D80D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
