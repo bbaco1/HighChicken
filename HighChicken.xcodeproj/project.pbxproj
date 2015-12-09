@@ -17,6 +17,7 @@
 		EC678FA61C1891FD003D80D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC678FA41C1891FD003D80D4 /* LaunchScreen.storyboard */; };
 		EC678FB11C1891FD003D80D4 /* HighChickenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678FB01C1891FD003D80D4 /* HighChickenTests.m */; };
 		EC678FBC1C1891FD003D80D4 /* HighChickenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678FBB1C1891FD003D80D4 /* HighChickenUITests.m */; };
+		EC678FCB1C18BA07003D80D4 /* igraScena.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678FCA1C18BA07003D80D4 /* igraScena.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		EC678FB71C1891FD003D80D4 /* HighChickenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighChickenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC678FBB1C1891FD003D80D4 /* HighChickenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighChickenUITests.m; sourceTree = "<group>"; };
 		EC678FBD1C1891FD003D80D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC678FC91C18BA07003D80D4 /* igraScena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = igraScena.h; path = ../igraScena.h; sourceTree = "<group>"; };
+		EC678FCA1C18BA07003D80D4 /* igraScena.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = igraScena.m; path = ../igraScena.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				EC678F9C1C1891FD003D80D4 /* GameViewController.h */,
 				EC678F9D1C1891FD003D80D4 /* GameViewController.m */,
 				EC678F9F1C1891FD003D80D4 /* Main.storyboard */,
+				EC678FC91C18BA07003D80D4 /* igraScena.h */,
+				EC678FCA1C18BA07003D80D4 /* igraScena.m */,
 				EC678FA21C1891FD003D80D4 /* Assets.xcassets */,
 				EC678FA41C1891FD003D80D4 /* LaunchScreen.storyboard */,
 				EC678FA71C1891FD003D80D4 /* Info.plist */,
@@ -280,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC678F9E1C1891FD003D80D4 /* GameViewController.m in Sources */,
+				EC678FCB1C18BA07003D80D4 /* igraScena.m in Sources */,
 				EC678F961C1891FD003D80D4 /* AppDelegate.m in Sources */,
 				EC678F991C1891FD003D80D4 /* GameScene.m in Sources */,
 				EC678F931C1891FD003D80D4 /* main.m in Sources */,
