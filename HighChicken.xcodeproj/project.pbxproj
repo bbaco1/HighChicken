@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC678F931C1891FD003D80D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678F921C1891FD003D80D4 /* main.m */; };
+		EC678F961C1891FD003D80D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678F951C1891FD003D80D4 /* AppDelegate.m */; };
+		EC678F991C1891FD003D80D4 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678F981C1891FD003D80D4 /* GameScene.m */; };
+		EC678F9B1C1891FD003D80D4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC678F9A1C1891FD003D80D4 /* GameScene.sks */; };
+		EC678F9E1C1891FD003D80D4 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678F9D1C1891FD003D80D4 /* GameViewController.m */; };
+		EC678FA11C1891FD003D80D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC678F9F1C1891FD003D80D4 /* Main.storyboard */; };
+		EC678FA31C1891FD003D80D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC678FA21C1891FD003D80D4 /* Assets.xcassets */; };
+		EC678FA61C1891FD003D80D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC678FA41C1891FD003D80D4 /* LaunchScreen.storyboard */; };
+		EC678FB11C1891FD003D80D4 /* HighChickenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678FB01C1891FD003D80D4 /* HighChickenTests.m */; };
+		EC678FBC1C1891FD003D80D4 /* HighChickenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678FBB1C1891FD003D80D4 /* HighChickenUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC678FAD1C1891FD003D80D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC678F861C1891FD003D80D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC678F8D1C1891FD003D80D4;
+			remoteInfo = HighChicken;
+		};
+		EC678FB81C1891FD003D80D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC678F861C1891FD003D80D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC678F8D1C1891FD003D80D4;
+			remoteInfo = HighChicken;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC678F8E1C1891FD003D80D4 /* HighChicken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighChicken.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC678F921C1891FD003D80D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC678F941C1891FD003D80D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC678F951C1891FD003D80D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC678F971C1891FD003D80D4 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		EC678F981C1891FD003D80D4 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		EC678F9A1C1891FD003D80D4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		EC678F9C1C1891FD003D80D4 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		EC678F9D1C1891FD003D80D4 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		EC678FA01C1891FD003D80D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC678FA21C1891FD003D80D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC678FA51C1891FD003D80D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC678FA71C1891FD003D80D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC678FAC1C1891FD003D80D4 /* HighChickenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighChickenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC678FB01C1891FD003D80D4 /* HighChickenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighChickenTests.m; sourceTree = "<group>"; };
+		EC678FB21C1891FD003D80D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC678FB71C1891FD003D80D4 /* HighChickenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighChickenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC678FBB1C1891FD003D80D4 /* HighChickenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighChickenUITests.m; sourceTree = "<group>"; };
+		EC678FBD1C1891FD003D80D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC678F8B1C1891FD003D80D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC678FA91C1891FD003D80D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC678FB41C1891FD003D80D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC678F851C1891FD003D80D4 = {
+			isa = PBXGroup;
+			children = (
+				EC678F901C1891FD003D80D4 /* HighChicken */,
+				EC678FAF1C1891FD003D80D4 /* HighChickenTests */,
+				EC678FBA1C1891FD003D80D4 /* HighChickenUITests */,
+				EC678F8F1C1891FD003D80D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC678F8F1C1891FD003D80D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC678F8E1C1891FD003D80D4 /* HighChicken.app */,
+				EC678FAC1C1891FD003D80D4 /* HighChickenTests.xctest */,
+				EC678FB71C1891FD003D80D4 /* HighChickenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC678F901C1891FD003D80D4 /* HighChicken */ = {
+			isa = PBXGroup;
+			children = (
+				EC678F941C1891FD003D80D4 /* AppDelegate.h */,
+				EC678F951C1891FD003D80D4 /* AppDelegate.m */,
+				EC678F971C1891FD003D80D4 /* GameScene.h */,
+				EC678F981C1891FD003D80D4 /* GameScene.m */,
+				EC678F9A1C1891FD003D80D4 /* GameScene.sks */,
+				EC678F9C1C1891FD003D80D4 /* GameViewController.h */,
+				EC678F9D1C1891FD003D80D4 /* GameViewController.m */,
+				EC678F9F1C1891FD003D80D4 /* Main.storyboard */,
+				EC678FA21C1891FD003D80D4 /* Assets.xcassets */,
+				EC678FA41C1891FD003D80D4 /* LaunchScreen.storyboard */,
+				EC678FA71C1891FD003D80D4 /* Info.plist */,
+				EC678F911C1891FD003D80D4 /* Supporting Files */,
+			);
+			path = HighChicken;
+			sourceTree = "<group>";
+		};
+		EC678F911C1891FD003D80D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC678F921C1891FD003D80D4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC678FAF1C1891FD003D80D4 /* HighChickenTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC678FB01C1891FD003D80D4 /* HighChickenTests.m */,
+				EC678FB21C1891FD003D80D4 /* Info.plist */,
+			);
+			path = HighChickenTests;
+			sourceTree = "<group>";
+		};
+		EC678FBA1C1891FD003D80D4 /* HighChickenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC678FBB1C1891FD003D80D4 /* HighChickenUITests.m */,
+				EC678FBD1C1891FD003D80D4 /* Info.plist */,
+			);
+			path = HighChickenUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC678F8D1C1891FD003D80D4 /* HighChicken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC678FC01C1891FD003D80D4 /* Build configuration list for PBXNativeTarget "HighChicken" */;
+			buildPhases = (
+				EC678F8A1C1891FD003D80D4 /* Sources */,
+				EC678F8B1C1891FD003D80D4 /* Frameworks */,
+				EC678F8C1C1891FD003D80D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HighChicken;
+			productName = HighChicken;
+			productReference = EC678F8E1C1891FD003D80D4 /* HighChicken.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC678FAB1C1891FD003D80D4 /* HighChickenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC678FC31C1891FD003D80D4 /* Build configuration list for PBXNativeTarget "HighChickenTests" */;
+			buildPhases = (
+				EC678FA81C1891FD003D80D4 /* Sources */,
+				EC678FA91C1891FD003D80D4 /* Frameworks */,
+				EC678FAA1C1891FD003D80D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC678FAE1C1891FD003D80D4 /* PBXTargetDependency */,
+			);
+			name = HighChickenTests;
+			productName = HighChickenTests;
+			productReference = EC678FAC1C1891FD003D80D4 /* HighChickenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC678FB61C1891FD003D80D4 /* HighChickenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC678FC61C1891FD003D80D4 /* Build configuration list for PBXNativeTarget "HighChickenUITests" */;
+			buildPhases = (
+				EC678FB31C1891FD003D80D4 /* Sources */,
+				EC678FB41C1891FD003D80D4 /* Frameworks */,
+				EC678FB51C1891FD003D80D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC678FB91C1891FD003D80D4 /* PBXTargetDependency */,
+			);
+			name = HighChickenUITests;
+			productName = HighChickenUITests;
+			productReference = EC678FB71C1891FD003D80D4 /* HighChickenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC678F861C1891FD003D80D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Anton Orzes";
+				TargetAttributes = {
+					EC678F8D1C1891FD003D80D4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					EC678FAB1C1891FD003D80D4 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EC678F8D1C1891FD003D80D4;
+					};
+					EC678FB61C1891FD003D80D4 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EC678F8D1C1891FD003D80D4;
+					};
+				};
+			};
+			buildConfigurationList = EC678F891C1891FD003D80D4 /* Build configuration list for PBXProject "HighChicken" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC678F851C1891FD003D80D4;
+			productRefGroup = EC678F8F1C1891FD003D80D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC678F8D1C1891FD003D80D4 /* HighChicken */,
+				EC678FAB1C1891FD003D80D4 /* HighChickenTests */,
+				EC678FB61C1891FD003D80D4 /* HighChickenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC678F8C1C1891FD003D80D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC678F9B1C1891FD003D80D4 /* GameScene.sks in Resources */,
+				EC678FA61C1891FD003D80D4 /* LaunchScreen.storyboard in Resources */,
+				EC678FA31C1891FD003D80D4 /* Assets.xcassets in Resources */,
+				EC678FA11C1891FD003D80D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC678FAA1C1891FD003D80D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC678FB51C1891FD003D80D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC678F8A1C1891FD003D80D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC678F9E1C1891FD003D80D4 /* GameViewController.m in Sources */,
+				EC678F961C1891FD003D80D4 /* AppDelegate.m in Sources */,
+				EC678F991C1891FD003D80D4 /* GameScene.m in Sources */,
+				EC678F931C1891FD003D80D4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC678FA81C1891FD003D80D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC678FB11C1891FD003D80D4 /* HighChickenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC678FB31C1891FD003D80D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC678FBC1C1891FD003D80D4 /* HighChickenUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC678FAE1C1891FD003D80D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC678F8D1C1891FD003D80D4 /* HighChicken */;
+			targetProxy = EC678FAD1C1891FD003D80D4 /* PBXContainerItemProxy */;
+		};
+		EC678FB91C1891FD003D80D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC678F8D1C1891FD003D80D4 /* HighChicken */;
+			targetProxy = EC678FB81C1891FD003D80D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC678F9F1C1891FD003D80D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC678FA01C1891FD003D80D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC678FA41C1891FD003D80D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC678FA51C1891FD003D80D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC678FBE1C1891FD003D80D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC678FBF1C1891FD003D80D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC678FC11C1891FD003D80D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HighChicken/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orzes.HighChicken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC678FC21C1891FD003D80D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HighChicken/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orzes.HighChicken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC678FC41C1891FD003D80D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = HighChickenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orzes.HighChickenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HighChicken.app/HighChicken";
+			};
+			name = Debug;
+		};
+		EC678FC51C1891FD003D80D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HighChickenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orzes.HighChickenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HighChicken.app/HighChicken";
+			};
+			name = Release;
+		};
+		EC678FC71C1891FD003D80D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = HighChickenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orzes.HighChickenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HighChicken;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EC678FC81C1891FD003D80D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HighChickenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orzes.HighChickenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HighChicken;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC678F891C1891FD003D80D4 /* Build configuration list for PBXProject "HighChicken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC678FBE1C1891FD003D80D4 /* Debug */,
+				EC678FBF1C1891FD003D80D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC678FC01C1891FD003D80D4 /* Build configuration list for PBXNativeTarget "HighChicken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC678FC11C1891FD003D80D4 /* Debug */,
+				EC678FC21C1891FD003D80D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC678FC31C1891FD003D80D4 /* Build configuration list for PBXNativeTarget "HighChickenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC678FC41C1891FD003D80D4 /* Debug */,
+				EC678FC51C1891FD003D80D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC678FC61C1891FD003D80D4 /* Build configuration list for PBXNativeTarget "HighChickenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC678FC71C1891FD003D80D4 /* Debug */,
+				EC678FC81C1891FD003D80D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC678F861C1891FD003D80D4 /* Project object */;
+}
