@@ -25,7 +25,8 @@
     // Create and configure the scene.
     GameScene *scene = [GameScene nodeWithFileNamed:@"GameScene"];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    
+    //ovo treba za velicinu
+    scene = [GameScene sceneWithSize:skView.bounds.size];
     // Present the scene.
     [skView presentScene:scene];
 }
