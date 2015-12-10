@@ -10,8 +10,11 @@
 		EC62F11D1C18BD9100B5657C /* crvenaTipka1.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F11C1C18BD9100B5657C /* crvenaTipka1.png */; };
 		EC62F1221C18EA4500B5657C /* gnijezdo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F1211C18EA4500B5657C /* gnijezdo.png */; };
 		EC62F1241C18ECB300B5657C /* kokosinjac2.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F1231C18ECB300B5657C /* kokosinjac2.png */; };
-		EC62F1291C19C12400B5657C /* glavaKoke.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F1271C19C12400B5657C /* glavaKoke.png */; };
 		EC62F12A1C19C12400B5657C /* kokaSjedi.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F1281C19C12400B5657C /* kokaSjedi.png */; };
+		EC62F12D1C19CF2E00B5657C /* dim.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC62F12B1C19CF2E00B5657C /* dim.sks */; };
+		EC62F12E1C19CF2E00B5657C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F12C1C19CF2E00B5657C /* spark.png */; };
+		EC62F1301C19DD1900B5657C /* glavaKoke.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F12F1C19DD1900B5657C /* glavaKoke.png */; };
+		EC62F1321C19DD2200B5657C /* zjenice.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F1311C19DD2200B5657C /* zjenice.png */; };
 		EC678F931C1891FD003D80D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678F921C1891FD003D80D4 /* main.m */; };
 		EC678F961C1891FD003D80D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678F951C1891FD003D80D4 /* AppDelegate.m */; };
 		EC678F991C1891FD003D80D4 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678F981C1891FD003D80D4 /* GameScene.m */; };
@@ -46,8 +49,11 @@
 		EC62F11C1C18BD9100B5657C /* crvenaTipka1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crvenaTipka1.png; path = HighChicken/crvenaTipka1.png; sourceTree = "<group>"; };
 		EC62F1211C18EA4500B5657C /* gnijezdo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gnijezdo.png; sourceTree = "<group>"; };
 		EC62F1231C18ECB300B5657C /* kokosinjac2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kokosinjac2.png; sourceTree = "<group>"; };
-		EC62F1271C19C12400B5657C /* glavaKoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glavaKoke.png; sourceTree = "<group>"; };
 		EC62F1281C19C12400B5657C /* kokaSjedi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kokaSjedi.png; sourceTree = "<group>"; };
+		EC62F12B1C19CF2E00B5657C /* dim.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = dim.sks; sourceTree = "<group>"; };
+		EC62F12C1C19CF2E00B5657C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		EC62F12F1C19DD1900B5657C /* glavaKoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glavaKoke.png; sourceTree = "<group>"; };
+		EC62F1311C19DD2200B5657C /* zjenice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zjenice.png; sourceTree = "<group>"; };
 		EC678F8E1C1891FD003D80D4 /* HighChicken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighChicken.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC678F921C1891FD003D80D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC678F941C1891FD003D80D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,11 +105,14 @@
 		EC62F11E1C18BD9A00B5657C /* slike */ = {
 			isa = PBXGroup;
 			children = (
-				EC62F1271C19C12400B5657C /* glavaKoke.png */,
+				EC62F1311C19DD2200B5657C /* zjenice.png */,
+				EC62F12F1C19DD1900B5657C /* glavaKoke.png */,
 				EC62F1281C19C12400B5657C /* kokaSjedi.png */,
 				EC62F11C1C18BD9100B5657C /* crvenaTipka1.png */,
 				EC62F1231C18ECB300B5657C /* kokosinjac2.png */,
 				EC62F1211C18EA4500B5657C /* gnijezdo.png */,
+				EC62F12B1C19CF2E00B5657C /* dim.sks */,
+				EC62F12C1C19CF2E00B5657C /* spark.png */,
 			);
 			name = slike;
 			sourceTree = "<group>";
@@ -279,12 +288,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC62F12E1C19CF2E00B5657C /* spark.png in Resources */,
+				EC62F1301C19DD1900B5657C /* glavaKoke.png in Resources */,
+				EC62F1321C19DD2200B5657C /* zjenice.png in Resources */,
 				EC678F9B1C1891FD003D80D4 /* GameScene.sks in Resources */,
 				EC678FA61C1891FD003D80D4 /* LaunchScreen.storyboard in Resources */,
 				EC62F1241C18ECB300B5657C /* kokosinjac2.png in Resources */,
 				EC62F11D1C18BD9100B5657C /* crvenaTipka1.png in Resources */,
+				EC62F12D1C19CF2E00B5657C /* dim.sks in Resources */,
 				EC678FA31C1891FD003D80D4 /* Assets.xcassets in Resources */,
-				EC62F1291C19C12400B5657C /* glavaKoke.png in Resources */,
 				EC62F1221C18EA4500B5657C /* gnijezdo.png in Resources */,
 				EC62F12A1C19C12400B5657C /* kokaSjedi.png in Resources */,
 				EC678FA11C1891FD003D80D4 /* Main.storyboard in Resources */,

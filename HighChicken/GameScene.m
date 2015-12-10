@@ -21,7 +21,7 @@
     [self addChild:podloga];
 
     SKSpriteNode *kokos = [SKSpriteNode spriteNodeWithImageNamed:@"kokaSjedi"];
-    kokos.size = CGSizeMake(200, 200);
+    kokos.size = CGSizeMake(180, 180);
     kokos.position = CGPointMake(self.size.width/1.9, self.size.height/3);
     kokos.zPosition=1;
     kokos.name = @"kokos";
@@ -29,12 +29,39 @@
     
     
     SKSpriteNode *glava = [SKSpriteNode spriteNodeWithImageNamed:@"glavaKoke"];
-    glava.size = CGSizeMake(120, 120);
-    glava.position = CGPointMake(80, 80);
+    glava.size = CGSizeMake(90, 90);
+    glava.position = CGPointMake(65, 22);
     glava.zPosition=1;
     glava.name = @"glava";
     [kokos addChild:glava];
+    glava.anchorPoint = CGPointMake(0.5, 0.3);
+    
+    SKSpriteNode *zjenice = [SKSpriteNode spriteNodeWithImageNamed:@"zjenice"];
+    zjenice.size = CGSizeMake(20, 10);
+    zjenice.position = CGPointMake(15, 30);
+    zjenice.zPosition=2;
+    zjenice.name = @"zjenice";
+    [glava addChild:zjenice];
+    
+    SKAction *mov1 =[SKAction moveBy:CGVectorMake(-3, 0) duration:0.3];
+    SKAction *mov2 =[SKAction moveBy:CGVectorMake(3, 0) duration:0.6];
+    SKAction *mov =[SKAction sequence:@[mov1,mov2]];
+    SKAction *repeatMov = [SKAction repeatActionForever:mov];
+    [zjenice runAction:repeatMov];
 
+    SKAction *rot1 =[SKAction rotateByAngle:-0.03 duration:0.3];
+    SKAction *rot2 =[SKAction rotateByAngle:0.03 duration:0.6];
+    SKAction *rot = [SKAction sequence:@[rot1,rot2]];
+    SKAction *repeatLop = [SKAction repeatActionForever:rot];
+    [glava runAction:repeatLop];
+    
+    NSString *burstPath =[[NSBundle mainBundle] pathForResource:@"dim" ofType:@"sks"];
+    SKEmitterNode *dim2 = [NSKeyedUnarchiver unarchiveObjectWithFile:burstPath];
+    dim2.position=CGPointMake(glava.size.width/2-20, -glava.size.height/2+25);
+    dim2.zPosition=3;
+    dim2.alpha = 0.5;
+    dim2.zRotation = -0.30;
+    [glava addChild:dim2];
   
     SKSpriteNode *tipka = [SKSpriteNode spriteNodeWithImageNamed:@"crvenaTipka1"];
     tipka.xScale = 1;
