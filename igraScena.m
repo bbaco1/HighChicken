@@ -11,7 +11,7 @@
 @implementation igraScena{
 
     SKSpriteNode *kokos;
-
+    int highScore;
 
 }
 
@@ -65,17 +65,33 @@
     
     if (node.position.y < self.size.height*0.8) {
         
-        [kokos.physicsBody applyImpulse:CGVectorMake(0, 2)];
+        [kokos.physicsBody applyImpulse:CGVectorMake(0, 20)];
         
         
         
+    }
+    
+   
+
+
+
+}
+
+ -(void)dodajMenuNode{
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 
 
 
 
-
-
-}
 
 @end
