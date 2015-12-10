@@ -12,6 +12,7 @@
 
     SKSpriteNode *kokos;
     int highScore;
+    SKSpriteNode *menuNode;
 
 }
 
@@ -38,6 +39,7 @@
     
     
     [self addChild:kokos];
+    [self dodajMenuNode];
 
 
 }
@@ -63,9 +65,9 @@
     SKNode *node = [self nodeAtPoint:p];
     
     
-    if (node.position.y < self.size.height*0.8) {
+    if (p.y < self.size.height*0.8) {
         
-        [kokos.physicsBody applyImpulse:CGVectorMake(0, 20)];
+        [kokos.physicsBody applyImpulse:CGVectorMake(0, 25)];
         
         
         
@@ -79,16 +81,28 @@
 
  -(void)dodajMenuNode{
     
-    
-    
-    
-    
-    
-    
-    
-    
+     menuNode = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(200, 200)];
+     menuNode.position = CGPointMake(self.size.width/2, -200);
+     menuNode.zPosition = 1;
+     [self addChild:menuNode];
     
     }
+
+-(void)update:(NSTimeInterval)currentTime{
+
+
+    if (kokos.position.y > self.size.height*0.7) {
+        
+        menuNode.position = CGPointMake(self.size.width*0.5, self.size.height*0.5);
+        
+        
+    }
+
+
+
+
+
+}
 
 
 
