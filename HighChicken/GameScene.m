@@ -64,8 +64,7 @@
     [glava addChild:dim2];
   
     SKSpriteNode *tipka = [SKSpriteNode spriteNodeWithImageNamed:@"start"];
-    tipka.xScale = 1;
-    tipka.yScale = 1;
+    tipka.size = CGSizeMake(self.size.width/2, 100);
     tipka.position = CGPointMake(self.size.width/2, self.size.height - 100);
     tipka.name = @"start";
     tipka.zPosition=1;

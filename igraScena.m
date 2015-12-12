@@ -28,6 +28,7 @@
     [self dodajPod];
     [self dodajMenuNode];
     [self dodajBackground];
+    [self dodajOgradu];
     
 
 
@@ -38,7 +39,7 @@
     SKSpriteNode *backGround = [SKSpriteNode spriteNodeWithImageNamed:@"podloga2"];
     backGround.size = CGSizeMake(self.size.width, self.size.height);
     backGround.position = CGPointMake(self.size.width/2, self.size.height/2);
-    backGround.zPosition = 1;
+    backGround.zPosition = 0;
     [self addChild:backGround];
 
 
@@ -56,7 +57,7 @@
     kokos = [SKSpriteNode spriteNodeWithImageNamed:@"kokaCupka0"];
     kokos.size = CGSizeMake(100, 100);
     kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
-    kokos.zPosition = 3;
+    kokos.zPosition = 5;
     kokos.physicsBody = [SKPhysicsBody bodyWithTexture:kokos.texture size:kokos.size];
     kokos.physicsBody.allowsRotation = NO;
     
@@ -106,7 +107,6 @@
     NSArray *cupArray = @[cup0, cup1, cup2, cup3, cup4, cup3, cup2, cup1];
     SKAction *cupAction =[SKAction animateWithTextures:cupArray timePerFrame:0.1];
     repeatCup = [SKAction repeatActionForever:cupAction];
-    //[kokos runAction:repeatCup];
     
     SKTexture *let0 = [SKTexture textureWithImageNamed:@"kokaLeti0"];
     SKTexture *let1 = [SKTexture textureWithImageNamed:@"kokaLeti1"];
@@ -119,6 +119,32 @@
     letAction =[SKAction animateWithTextures:letArray timePerFrame:0.01];
     repeatLet = [SKAction repeatActionForever:letAction];
     
+}
+
+-(void) dodajOgradu{
+
+    SKSpriteNode *trava = [SKSpriteNode spriteNodeWithImageNamed:@"trava"];
+    trava.size = CGSizeMake(self.size.width, self.size.height/5);
+    trava.position = CGPointMake(self.size.width/2, trava.size.height/2);
+    trava.zPosition = 1;
+    [self addChild:trava];
+    
+    SKSpriteNode *ograda = [SKSpriteNode spriteNodeWithImageNamed:@"ograda"];
+    ograda.size = CGSizeMake(self.size.width/2-50, self.size.height/2);
+    ograda.position = CGPointMake(self.size.width-ograda.size.width/2 - 5, self.size.height/2.7);
+    ograda.name = @"ograda";
+    ograda.zPosition = 2;
+    [self addChild:ograda];
+
+    SKSpriteNode *kuca = [SKSpriteNode spriteNodeWithImageNamed:@"kucica"];
+    kuca.size = CGSizeMake(self.size.width/3, self.size.height/6);
+    kuca.position = CGPointMake(kuca.size.width/2+30, trava.size.height-10 + kuca.size.height/2);
+    kuca.zPosition = 2;
+    [self addChild:kuca];
+    
+    
+
+
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
