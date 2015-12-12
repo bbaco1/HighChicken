@@ -63,9 +63,9 @@
     dim2.zRotation = -0.30;
     [glava addChild:dim2];
   
-    SKSpriteNode *tipka = [SKSpriteNode spriteNodeWithImageNamed:@"crvenaTipka1"];
+    SKSpriteNode *tipka = [SKSpriteNode spriteNodeWithImageNamed:@"start"];
     tipka.xScale = 1;
-    tipka.yScale = 0.5;
+    tipka.yScale = 1;
     tipka.position = CGPointMake(self.size.width/2, self.size.height - 100);
     tipka.name = @"start";
     tipka.zPosition=1;
