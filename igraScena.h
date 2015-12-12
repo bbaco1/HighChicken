@@ -9,5 +9,11 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface igraScena : SKScene
+{
+    SKAction *repeatCup;
+    SKAction *repeatLet;
+    bool cupka,leti;
+
+}
 
 @end
