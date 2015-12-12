@@ -16,7 +16,7 @@
     long highScore;
     SKSpriteNode *menuNode;
     SKAction *letAction;
-    
+    SKAction *moveChicken;
 
 }
 
@@ -28,6 +28,7 @@
     [self dodajPod];
     [self dodajMenuNode];
     [self dodajBackground];
+    
 
 
 
@@ -67,6 +68,7 @@
     
     
     
+    moveChicken = [SKAction moveTo:CGPointMake(self.size.width+80, self.size.height+40) duration:1];
     
     [self addChild:kokos];
     [self addChild:pobjedonosnaKokos];
@@ -114,7 +116,7 @@
     SKTexture *let5 = [SKTexture textureWithImageNamed:@"kokaLeti5"];
     
     NSArray *letArray = @[let0, let1, let2, let3, let4, let5, let4, let3, let2, let1];
-    letAction =[SKAction animateWithTextures:letArray timePerFrame:0.05];
+    letAction =[SKAction animateWithTextures:letArray timePerFrame:0.01];
     repeatLet = [SKAction repeatActionForever:letAction];
     
 }
@@ -127,10 +129,23 @@
     
     if (p.y < self.size.height*0.8) {
         
-        [kokos.physicsBody applyImpulse:CGVectorMake(0, 35)];
+        [kokos.physicsBody applyImpulse:CGVectorMake(0, 45)];
         
         
         
+    }
+    
+    if ([node.name isEqualToString:@"menuNode"]) {
+        
+        [kokos removeAllActions];
+        kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
+        menuNode.position = CGPointMake(-200, 0);
+        
+        kokos.physicsBody.dynamic = YES;
+        pobjedonosnaKokos.position = CGPointMake(-200, 0);
+
+        [pobjedonosnaKokos removeAllActions];
+                
     }
     
    
@@ -143,7 +158,8 @@
     
      menuNode = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(200, 200)];
      menuNode.position = CGPointMake(self.size.width/2, -200);
-     menuNode.zPosition = 1;
+     menuNode.zPosition = 2;
+     menuNode.name = @"menuNode";
      [self addChild:menuNode];
     
     }
@@ -187,11 +203,14 @@
 
 -(void)winGame{
 
-    SKAction *moveChicken;
+    
     moveChicken = [SKAction moveTo:CGPointMake(self.size.width+80, self.size.height+40) duration:1];
 
     [pobjedonosnaKokos runAction:moveChicken];
     [pobjedonosnaKokos runAction:repeatLet];
+    [self dodajMenuNode];
+    
+    self.physicsWorld.gravity = CGVectorMake(0, -0.9 - highScore);
     
 }
 
@@ -203,6 +222,8 @@
     highScore = 0;
     kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
     pobjedonosnaKokos.position = CGPointMake(self.size.width - 200, self.size.height/2);
+    [self dodajMenuNode];
+    self.physicsWorld.gravity = CGVectorMake(0, -0.1);
 
 
 }
