@@ -17,6 +17,14 @@
     SKSpriteNode *menuNode;
     SKAction *letAction;
     SKAction *moveChicken;
+    SKAction *moveChicken2;
+    SKSpriteNode *pod;
+    SKSpriteNode *playTipka;
+    SKSpriteNode *leaderBoard;
+    SKAction *moveActions;
+    SKSpriteNode *winLose;
+    SKTexture *win;
+    SKTexture *lose;
 
 }
 
@@ -24,11 +32,13 @@
 
 
 -(void)didMoveToView:(SKView *)view{
+    self.physicsWorld.gravity = CGVectorMake(0, -9);
     [self dodajKokos];
     [self dodajPod];
     [self dodajMenuNode];
     [self dodajBackground];
     [self dodajOgradu];
+    [self dodajMenuNode];
     
 
 
@@ -70,6 +80,9 @@
     
     
     moveChicken = [SKAction moveTo:CGPointMake(self.size.width+80, self.size.height+40) duration:1];
+    moveChicken2 = [SKAction moveTo:CGPointMake(100, 100) duration:1];
+    NSArray *array = @[moveChicken, moveChicken2];
+    moveActions = [SKAction sequence:array];
     
     [self addChild:kokos];
     [self addChild:pobjedonosnaKokos];
@@ -82,10 +95,10 @@
 -(void)dodajPod {
 
 
-    SKSpriteNode *pod = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(300, 10)];
+    pod = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(300, 30)];
     pod.position = CGPointMake(self.size.width/2, self.size.height*0.1);
     pod.zPosition = 1;
-    pod.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:pod.size];
+    pod.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(300, 10)];
     pod.physicsBody.dynamic = NO;
     [self addChild:pod];
 
@@ -153,7 +166,7 @@
     SKNode *node = [self nodeAtPoint:p];
     
     
-    if (p.y < self.size.height*0.8) {
+    if (p.y < self.size.height*0.8 && menuNode.position.y != self.size.height/2) {
         
         [kokos.physicsBody applyImpulse:CGVectorMake(0, 45)];
         
@@ -161,7 +174,9 @@
         
     }
     
-    if ([node.name isEqualToString:@"menuNode"]) {
+    if ([node.name isEqualToString:@"play"]) {
+        
+        
         
         [kokos removeAllActions];
         kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
@@ -171,6 +186,7 @@
         pobjedonosnaKokos.position = CGPointMake(-200, 0);
 
         [pobjedonosnaKokos removeAllActions];
+        
                 
     }
     
@@ -182,11 +198,34 @@
 
  -(void)dodajMenuNode{
     
-     menuNode = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(200, 200)];
+     menuNode = [SKSpriteNode spriteNodeWithImageNamed:@"izbornik"];
+     menuNode.size = CGSizeMake(200, 200);
      menuNode.position = CGPointMake(self.size.width/2, -200);
-     menuNode.zPosition = 2;
+     menuNode.zPosition = 5;
      menuNode.name = @"menuNode";
      [self addChild:menuNode];
+     
+     playTipka = [SKSpriteNode spriteNodeWithImageNamed:@"play"];
+     playTipka.size = CGSizeMake(100, 50);
+     playTipka.position = CGPointMake(0, 60);
+     playTipka.zPosition = 1;
+     playTipka.name = @"play";
+     [menuNode addChild:playTipka];
+     
+     leaderBoard = [SKSpriteNode spriteNodeWithImageNamed:@"leaderboard"];
+     leaderBoard.size = CGSizeMake(150, 50);
+     leaderBoard.position = CGPointMake(0, 0);
+     leaderBoard.zPosition = 1;
+     leaderBoard.name = @"leaderBoard";
+     [menuNode addChild:leaderBoard];
+     
+     win = [SKTexture textureWithImageNamed:@"youWin"];
+     lose = [SKTexture textureWithImageNamed:@"youLose"];
+     winLose = [SKSpriteNode spriteNodeWithImageNamed:@""];
+     winLose.size = CGSizeMake(120, 50);
+     winLose.position = CGPointMake(0, 130);
+     winLose.zPosition = 2;
+     [menuNode addChild:winLose];
     
     }
 
@@ -200,7 +239,7 @@
         kokos.physicsBody.dynamic = NO;
         pobjedonosnaKokos.position = kokos.position;
         kokos.position = CGPointMake(-200, 0);
-        NSLog(@"%ld", maxScore);
+        NSLog(@"%ld", highScore);
         [self winGame];
         if (highScore>maxScore) {
             
@@ -209,8 +248,25 @@
         }
         
         
+        
+        
     }
+    
+    if (kokos.physicsBody.velocity.dy < -500 && [kokos intersectsNode:pod]) {
+            
+            
+        NSLog(@"pad");
+        [self loseGame];
+            
+            
+            
+        }
 
+    
+    
+    //NSLog(@"brzina je : %f", kokos.physicsBody.velocity.dy);
+    
+    
     if (kokos.position.y > (self.size.height*0.1+kokos.size.height/2 + 20)){
     
         if(!leti){[kokos runAction:repeatLet];leti=true;cupka=false;}
@@ -231,12 +287,14 @@
 
     
     moveChicken = [SKAction moveTo:CGPointMake(self.size.width+80, self.size.height+40) duration:1];
+    
 
     [pobjedonosnaKokos runAction:moveChicken];
     [pobjedonosnaKokos runAction:repeatLet];
-    [self dodajMenuNode];
     
-    self.physicsWorld.gravity = CGVectorMake(0, -0.9 - highScore);
+    
+    self.physicsWorld.gravity = CGVectorMake(0, -9 - highScore);
+    winLose.texture = win;
     
 }
 
@@ -248,8 +306,9 @@
     highScore = 0;
     kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
     pobjedonosnaKokos.position = CGPointMake(self.size.width - 200, self.size.height/2);
-    [self dodajMenuNode];
-    self.physicsWorld.gravity = CGVectorMake(0, -0.1);
+    menuNode.position = CGPointMake(self.size.width/2, self.size.height/2);
+    self.physicsWorld.gravity = CGVectorMake(0, -9);
+    winLose.texture = lose;
 
 
 }

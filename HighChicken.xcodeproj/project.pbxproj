@@ -42,6 +42,11 @@
 		EC678FB11C1891FD003D80D4 /* HighChickenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678FB01C1891FD003D80D4 /* HighChickenTests.m */; };
 		EC678FBC1C1891FD003D80D4 /* HighChickenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678FBB1C1891FD003D80D4 /* HighChickenUITests.m */; };
 		EC678FCB1C18BA07003D80D4 /* igraScena.m in Sources */ = {isa = PBXBuildFile; fileRef = EC678FCA1C18BA07003D80D4 /* igraScena.m */; };
+		ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */; };
+		ECFB9CC51C1DE448008A3E96 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC41C1DE448008A3E96 /* play.png */; };
+		ECFB9CC91C1DE7A3008A3E96 /* leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC81C1DE7A3008A3E96 /* leaderboard.png */; };
+		ECFB9CCB1C1DEA0C008A3E96 /* youLose.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CCA1C1DEA0C008A3E96 /* youLose.png */; };
+		ECFB9CCD1C1DEBE6008A3E96 /* youWin.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CCC1C1DEBE6008A3E96 /* youWin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +112,11 @@
 		EC678FBD1C1891FD003D80D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC678FC91C18BA07003D80D4 /* igraScena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = igraScena.h; path = ../igraScena.h; sourceTree = "<group>"; };
 		EC678FCA1C18BA07003D80D4 /* igraScena.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = igraScena.m; path = ../igraScena.m; sourceTree = "<group>"; };
+		ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = izbornik.png; sourceTree = "<group>"; };
+		ECFB9CC41C1DE448008A3E96 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		ECFB9CC81C1DE7A3008A3E96 /* leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboard.png; sourceTree = "<group>"; };
+		ECFB9CCA1C1DEA0C008A3E96 /* youLose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youLose.png; sourceTree = "<group>"; };
+		ECFB9CCC1C1DEBE6008A3E96 /* youWin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youWin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +147,11 @@
 		EC62F11E1C18BD9A00B5657C /* slike */ = {
 			isa = PBXGroup;
 			children = (
+				ECFB9CCA1C1DEA0C008A3E96 /* youLose.png */,
+				ECFB9CCC1C1DEBE6008A3E96 /* youWin.png */,
+				ECFB9CC81C1DE7A3008A3E96 /* leaderboard.png */,
+				ECFB9CC41C1DE448008A3E96 /* play.png */,
+				ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */,
 				EC17B5361C1C82DB0031980E /* trava.png */,
 				EC17B5381C1C866B0031980E /* start.png */,
 				EC17B5341C1C815F0031980E /* kucica.png */,
@@ -338,6 +353,7 @@
 			files = (
 				EC62F1471C1B31D000B5657C /* kokaCupka3.png in Resources */,
 				EC62F12E1C19CF2E00B5657C /* spark.png in Resources */,
+				ECFB9CCD1C1DEBE6008A3E96 /* youWin.png in Resources */,
 				EC62F13B1C1B31B300B5657C /* kokaLeti2.png in Resources */,
 				EC62F13A1C1B31B300B5657C /* kokaLeti1.png in Resources */,
 				EC17B5351C1C815F0031980E /* kucica.png in Resources */,
@@ -346,8 +362,11 @@
 				EC62F1451C1B31D000B5657C /* kokaCupka1.png in Resources */,
 				EC62F1321C19DD2200B5657C /* zjenice.png in Resources */,
 				EC678F9B1C1891FD003D80D4 /* GameScene.sks in Resources */,
+				ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */,
+				ECFB9CC51C1DE448008A3E96 /* play.png in Resources */,
 				EC62F1391C1B31B300B5657C /* kokaLeti0.png in Resources */,
 				EC62F13C1C1B31B300B5657C /* kokaLeti3.png in Resources */,
+				ECFB9CCB1C1DEA0C008A3E96 /* youLose.png in Resources */,
 				EC62F13D1C1B31B300B5657C /* kokaLeti4.png in Resources */,
 				EC678FA61C1891FD003D80D4 /* LaunchScreen.storyboard in Resources */,
 				EC17B5371C1C82DB0031980E /* trava.png in Resources */,
@@ -356,6 +375,7 @@
 				EC62F1481C1B31D000B5657C /* kokaCupka4.png in Resources */,
 				EC62F11D1C18BD9100B5657C /* crvenaTipka1.png in Resources */,
 				EC62F12D1C19CF2E00B5657C /* dim.sks in Resources */,
+				ECFB9CC91C1DE7A3008A3E96 /* leaderboard.png in Resources */,
 				EC5CA55D1C1C3E2D00F3A4A1 /* podloga2.png in Resources */,
 				EC62F13E1C1B31B300B5657C /* kokaLeti5.png in Resources */,
 				EC62F1461C1B31D000B5657C /* kokaCupka2.png in Resources */,
