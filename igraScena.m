@@ -29,6 +29,7 @@
     [self dodajMenuNode];
     [self dodajBackground];
     [self dodajOgradu];
+    [self dodajOblak];
     
 
 
@@ -131,7 +132,7 @@
     
     SKSpriteNode *ograda = [SKSpriteNode spriteNodeWithImageNamed:@"ograda"];
     ograda.size = CGSizeMake(self.size.width/2-50, self.size.height/2);
-    ograda.position = CGPointMake(self.size.width-ograda.size.width/2 - 5, self.size.height/2.7);
+    ograda.position = CGPointMake(self.size.width-ograda.size.width/2 - 5, self.size.height/2.8);
     ograda.name = @"ograda";
     ograda.zPosition = 2;
     [self addChild:ograda];
@@ -141,8 +142,22 @@
     kuca.position = CGPointMake(kuca.size.width/2+30, trava.size.height-10 + kuca.size.height/2);
     kuca.zPosition = 2;
     [self addChild:kuca];
+ 
+}
+
+-(void) dodajOblak{
+
+    oblak1 = [SKSpriteNode spriteNodeWithImageNamed:@"oblak1"];
+    oblak1.size = CGSizeMake(160, 80);
+    oblak1.position = CGPointMake(self.size.width, self.size.height/1.3);
+    oblak1.zPosition = 1;
+    [self addChild:oblak1];
     
-    
+    oblak2 = [SKSpriteNode spriteNodeWithImageNamed:@"oblak2"];
+    oblak2.size = CGSizeMake(160, 80);
+    oblak2.position = CGPointMake(self.size.width+120, self.size.height/1.4);
+    oblak2.zPosition = 1;
+    [self addChild:oblak2];
 
 
 }
@@ -222,7 +237,29 @@
     
     }
 
-
+    CGPoint op= oblak1.position;
+    op.x-=0.4;
+    
+    if(op.x<-oblak1.size.width){
+        op.x = self.size.width + oblak1.size.width/2;
+        op.y = self.size.height/2 + arc4random() % 300;
+        NSString *imeOblaka = [NSString stringWithFormat:@"oblak%d",arc4random() % 5 + 1];
+        [oblak1 setTexture:[SKTexture textureWithImageNamed:imeOblaka]];
+    }
+        
+    oblak1.position = op;
+    
+    op= oblak2.position;
+    op.x-=0.3;
+    
+    if(op.x<-oblak2.size.width){
+        op.x = self.size.width + oblak2.size.width/2;
+        op.y = self.size.height/2 + arc4random() % 300;
+        NSString *imeOblaka = [NSString stringWithFormat:@"oblak%d",arc4random() % 5 + 1];
+        [oblak2 setTexture:[SKTexture textureWithImageNamed:imeOblaka]];
+    }
+    
+    oblak2.position = op;
 
 }
 
