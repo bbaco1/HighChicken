@@ -38,6 +38,7 @@
     [self dodajMenuNode];
     [self dodajBackground];
     [self dodajOgradu];
+    [self dodajMenuNode];
     [self dodajOblak];
     
 
