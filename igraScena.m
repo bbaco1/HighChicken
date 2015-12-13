@@ -25,6 +25,8 @@
     SKSpriteNode *winLose;
     SKTexture *win;
     SKTexture *lose;
+    SKTexture *nextTexture;
+    SKTexture *playTexture;
 
 }
 
@@ -205,7 +207,10 @@
      menuNode.name = @"menuNode";
      [self addChild:menuNode];
      
-     playTipka = [SKSpriteNode spriteNodeWithImageNamed:@"play"];
+     nextTexture = [SKTexture textureWithImageNamed:@"next"];
+     playTexture = [SKTexture textureWithImageNamed:@"play"];
+     
+     playTipka = [SKSpriteNode spriteNodeWithTexture:playTexture];
      playTipka.size = CGSizeMake(100, 50);
      playTipka.position = CGPointMake(0, 60);
      playTipka.zPosition = 1;
@@ -295,6 +300,8 @@
     
     self.physicsWorld.gravity = CGVectorMake(0, -9 - highScore);
     winLose.texture = win;
+    playTipka.texture = nextTexture;
+    
     
 }
 
@@ -309,6 +316,7 @@
     menuNode.position = CGPointMake(self.size.width/2, self.size.height/2);
     self.physicsWorld.gravity = CGVectorMake(0, -9);
     winLose.texture = lose;
+    playTipka.texture = playTexture;
 
 
 }
