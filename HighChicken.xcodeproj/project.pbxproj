@@ -53,6 +53,7 @@
 		ECFB9CC91C1DE7A3008A3E96 /* leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC81C1DE7A3008A3E96 /* leaderboard.png */; };
 		ECFB9CCB1C1DEA0C008A3E96 /* youLose.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CCA1C1DEA0C008A3E96 /* youLose.png */; };
 		ECFB9CCD1C1DEBE6008A3E96 /* youWin.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CCC1C1DEBE6008A3E96 /* youWin.png */; };
+		ECFB9CCF1C1DEEB1008A3E96 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CCE1C1DEEB1008A3E96 /* next.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		ECFB9CC81C1DE7A3008A3E96 /* leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboard.png; sourceTree = "<group>"; };
 		ECFB9CCA1C1DEA0C008A3E96 /* youLose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youLose.png; sourceTree = "<group>"; };
 		ECFB9CCC1C1DEBE6008A3E96 /* youWin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youWin.png; sourceTree = "<group>"; };
+		ECFB9CCE1C1DEEB1008A3E96 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				ECDE20DD1C1CAA110031CE5F /* ograda.png */,
 				ECFB9CCA1C1DEA0C008A3E96 /* youLose.png */,
 				ECFB9CCC1C1DEBE6008A3E96 /* youWin.png */,
+				ECFB9CCE1C1DEEB1008A3E96 /* next.png */,
 				ECFB9CC81C1DE7A3008A3E96 /* leaderboard.png */,
 				ECFB9CC41C1DE448008A3E96 /* play.png */,
 				ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */,
@@ -403,6 +406,7 @@
 				EC678FA31C1891FD003D80D4 /* Assets.xcassets in Resources */,
 				ECDE20E71C1CAD300031CE5F /* oblak4.png in Resources */,
 				EC62F1221C18EA4500B5657C /* gnijezdo.png in Resources */,
+				ECFB9CCF1C1DEEB1008A3E96 /* next.png in Resources */,
 				EC62F12A1C19C12400B5657C /* kokaSjedi.png in Resources */,
 				EC62F1441C1B31D000B5657C /* kokaCupka0.png in Resources */,
 				ECFB9CC91C1DE7A3008A3E96 /* leaderboard.png in Resources */,
