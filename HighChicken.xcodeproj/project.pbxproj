@@ -46,12 +46,13 @@
 		EC6AB57F1C1F1A920023C80A /* kokaPala3.png in Resources */ = {isa = PBXBuildFile; fileRef = EC6AB57B1C1F1A920023C80A /* kokaPala3.png */; };
 		EC6AB5801C1F1A920023C80A /* kokaPala4.png in Resources */ = {isa = PBXBuildFile; fileRef = EC6AB57C1C1F1A920023C80A /* kokaPala4.png */; };
 		ECDE20DE1C1CAA110031CE5F /* ograda.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE20DD1C1CAA110031CE5F /* ograda.png */; };
-		ECDE20E71C1CAD300031CE5F /* oblak4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE20E21C1CAD300031CE5F /* oblak4.png */; };
 		ECDE21191C1DF2DE0031CE5F /* oblak1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21141C1DF2DE0031CE5F /* oblak1.png */; };
 		ECDE211A1C1DF2DE0031CE5F /* oblak2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21151C1DF2DE0031CE5F /* oblak2.png */; };
 		ECDE211B1C1DF2DE0031CE5F /* oblak3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21161C1DF2DE0031CE5F /* oblak3.png */; };
-		ECDE211C1C1DF2DE0031CE5F /* oblak4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21171C1DF2DE0031CE5F /* oblak4.png */; };
 		ECDE211D1C1DF2DE0031CE5F /* oblak5.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21181C1DF2DE0031CE5F /* oblak5.png */; };
+		ECDE211F1C1F65740031CE5F /* puff.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE211E1C1F65740031CE5F /* puff.png */; };
+		ECDE21211C1F76360031CE5F /* oblak4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21201C1F76360031CE5F /* oblak4.png */; };
+		ECDE21231C1F77220031CE5F /* sjena.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21221C1F77220031CE5F /* sjena.png */; };
 		ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */; };
 		ECFB9CC51C1DE448008A3E96 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC41C1DE448008A3E96 /* play.png */; };
 		ECFB9CC91C1DE7A3008A3E96 /* leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC81C1DE7A3008A3E96 /* leaderboard.png */; };
@@ -127,12 +128,13 @@
 		EC6AB57B1C1F1A920023C80A /* kokaPala3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kokaPala3.png; sourceTree = "<group>"; };
 		EC6AB57C1C1F1A920023C80A /* kokaPala4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kokaPala4.png; sourceTree = "<group>"; };
 		ECDE20DD1C1CAA110031CE5F /* ograda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ograda.png; sourceTree = "<group>"; };
-		ECDE20E21C1CAD300031CE5F /* oblak4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak4.png; sourceTree = "<group>"; };
 		ECDE21141C1DF2DE0031CE5F /* oblak1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak1.png; sourceTree = "<group>"; };
 		ECDE21151C1DF2DE0031CE5F /* oblak2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak2.png; sourceTree = "<group>"; };
 		ECDE21161C1DF2DE0031CE5F /* oblak3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak3.png; sourceTree = "<group>"; };
-		ECDE21171C1DF2DE0031CE5F /* oblak4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak4.png; sourceTree = "<group>"; };
 		ECDE21181C1DF2DE0031CE5F /* oblak5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak5.png; sourceTree = "<group>"; };
+		ECDE211E1C1F65740031CE5F /* puff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puff.png; sourceTree = "<group>"; };
+		ECDE21201C1F76360031CE5F /* oblak4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak4.png; sourceTree = "<group>"; };
+		ECDE21221C1F77220031CE5F /* sjena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sjena.png; sourceTree = "<group>"; };
 		ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = izbornik.png; sourceTree = "<group>"; };
 		ECFB9CC41C1DE448008A3E96 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		ECFB9CC81C1DE7A3008A3E96 /* leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboard.png; sourceTree = "<group>"; };
@@ -169,6 +171,8 @@
 		EC62F11E1C18BD9A00B5657C /* slike */ = {
 			isa = PBXGroup;
 			children = (
+				ECDE211E1C1F65740031CE5F /* puff.png */,
+				ECDE21221C1F77220031CE5F /* sjena.png */,
 				EC6AB5791C1F1A920023C80A /* kokaPala1.png */,
 				EC6AB57A1C1F1A920023C80A /* kokaPala2.png */,
 				EC6AB57B1C1F1A920023C80A /* kokaPala3.png */,
@@ -177,7 +181,7 @@
 				ECDE21141C1DF2DE0031CE5F /* oblak1.png */,
 				ECDE21151C1DF2DE0031CE5F /* oblak2.png */,
 				ECDE21161C1DF2DE0031CE5F /* oblak3.png */,
-				ECDE21171C1DF2DE0031CE5F /* oblak4.png */,
+				ECDE21201C1F76360031CE5F /* oblak4.png */,
 				ECDE21181C1DF2DE0031CE5F /* oblak5.png */,
 				ECDE20DD1C1CAA110031CE5F /* ograda.png */,
 				ECFB9CCA1C1DEA0C008A3E96 /* youLose.png */,
@@ -393,16 +397,18 @@
 				EC6AB57D1C1F1A920023C80A /* kokaPala1.png in Resources */,
 				EC62F1301C19DD1900B5657C /* glavaKoke.png in Resources */,
 				EC17B5391C1C866B0031980E /* start.png in Resources */,
+				ECDE21231C1F77220031CE5F /* sjena.png in Resources */,
 				EC62F1451C1B31D000B5657C /* kokaCupka1.png in Resources */,
+				ECDE211F1C1F65740031CE5F /* puff.png in Resources */,
 				ECDE20DE1C1CAA110031CE5F /* ograda.png in Resources */,
 				EC62F1321C19DD2200B5657C /* zjenice.png in Resources */,
+				ECDE21211C1F76360031CE5F /* oblak4.png in Resources */,
 				ECDE211B1C1DF2DE0031CE5F /* oblak3.png in Resources */,
 				EC678F9B1C1891FD003D80D4 /* GameScene.sks in Resources */,
 				ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */,
 				ECFB9CC51C1DE448008A3E96 /* play.png in Resources */,
 				EC6AB57F1C1F1A920023C80A /* kokaPala3.png in Resources */,
 				EC62F1391C1B31B300B5657C /* kokaLeti0.png in Resources */,
-				ECDE211C1C1DF2DE0031CE5F /* oblak4.png in Resources */,
 				EC62F13C1C1B31B300B5657C /* kokaLeti3.png in Resources */,
 				ECFB9CCB1C1DEA0C008A3E96 /* youLose.png in Resources */,
 				EC62F13D1C1B31B300B5657C /* kokaLeti4.png in Resources */,
@@ -420,7 +426,6 @@
 				EC6AB57E1C1F1A920023C80A /* kokaPala2.png in Resources */,
 				EC62F1461C1B31D000B5657C /* kokaCupka2.png in Resources */,
 				EC678FA31C1891FD003D80D4 /* Assets.xcassets in Resources */,
-				ECDE20E71C1CAD300031CE5F /* oblak4.png in Resources */,
 				EC62F1221C18EA4500B5657C /* gnijezdo.png in Resources */,
 				ECFB9CCF1C1DEEB1008A3E96 /* next.png in Resources */,
 				EC62F12A1C19C12400B5657C /* kokaSjedi.png in Resources */,

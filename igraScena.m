@@ -11,6 +11,7 @@
 @implementation igraScena{
 
     SKSpriteNode *kokos;
+    SKSpriteNode *sjena;
     SKSpriteNode *pobjedonosnaKokos;
     long maxScore;
     long highScore;
@@ -94,6 +95,7 @@
     
     
     
+    
     moveChicken = [SKAction moveTo:CGPointMake(self.size.width+80, self.size.height+40) duration:1];
     moveChicken2 = [SKAction moveTo:CGPointMake(100, 100) duration:1];
     NSArray *array = @[moveChicken, moveChicken2];
@@ -104,6 +106,8 @@
     [self dodajAnimacije];
     
     
+    
+
 
 
 }
@@ -118,7 +122,12 @@
     pod.physicsBody.dynamic = NO;
     [self addChild:pod];
 
-
+    sjena = [SKSpriteNode spriteNodeWithImageNamed:@"sjena"];
+    sjena.size = CGSizeMake(80, 15);
+    sjena.position = CGPointMake(kokos.position.x, pod.position.y+5);
+    sjena.zPosition = 5;
+    sjena.alpha = 0.7;
+    [self addChild:sjena];
 
 
 }
@@ -219,7 +228,9 @@
     
     if ([node.name isEqualToString:@"play"]) {
         
-        
+        cupka = false;
+        leti = false;
+        pao = false;
         
         [kokos removeAllActions];
         kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
@@ -302,6 +313,7 @@
             
             
         NSLog(@"pad %f", kokos.physicsBody.velocity.dy );
+       
         [self loseGame];
             
             
@@ -315,12 +327,12 @@
     
     if (kokos.position.y > (self.size.height*0.1+kokos.size.height/2 + 20)){
     
-       // if(!leti){[kokos runAction:repeatLet];leti=true;cupka=false;}
+        if(!leti){[kokos runAction:repeatLet];leti=true;cupka=false;}
     
     }
     else{
         
-      //  if(!cupka){[kokos runAction:repeatCup];cupka=true;leti=false;}
+        if(!cupka){[kokos runAction:repeatCup];cupka=true;leti=false;}
     
     }
 
@@ -347,6 +359,8 @@
     }
     
     oblak2.position = op;
+    
+    sjena.position = CGPointMake(kokos.position.x, pod.position.y-(kokos.position.y-pod.position.y-kokos.size.height/2-30)/10);
 
 }
 
@@ -373,8 +387,9 @@
 
 
 -(void)loseGame {
-    if(!pao) {[kokos runAction:repeatPad];pao=true;}
+    if(!pao) {[kokos runAction:repeatPad];pao=true; cupka=true; leti=true;}
     highScore = 0;
+    
    // kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
     pobjedonosnaKokos.position = CGPointMake(self.size.width - 200, self.size.height/2);
     menuNode.position = CGPointMake(self.size.width/2, self.size.height/2);
