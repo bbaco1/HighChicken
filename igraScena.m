@@ -27,6 +27,10 @@
     SKTexture *lose;
     SKTexture *nextTexture;
     SKTexture *playTexture;
+    NSString *highScoreString;
+    SKLabelNode *scoreLabela;
+    SKAction *repeatPad;
+   
 
 }
 
@@ -43,6 +47,14 @@
     [self dodajMenuNode];
     [self dodajOblak];
     
+    scoreLabela = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+    scoreLabela.fontSize = 30;
+    scoreLabela.position = CGPointMake(self.size.width/2, self.size.height-100);
+    scoreLabela.zPosition = 3;
+    [scoreLabela setText:highScoreString];
+    [self addChild:scoreLabela];
+    
+   
 
 
 
@@ -90,6 +102,7 @@
     [self addChild:kokos];
     [self addChild:pobjedonosnaKokos];
     [self dodajAnimacije];
+    [kokos runAction:repeatPad];
     
 
 
@@ -134,6 +147,18 @@
     NSArray *letArray = @[let0, let1, let2, let3, let4, let5, let4, let3, let2, let1];
     letAction =[SKAction animateWithTextures:letArray timePerFrame:0.01];
     repeatLet = [SKAction repeatActionForever:letAction];
+    
+    //kokos pala animacija
+    
+    SKTexture *pad0 = [SKTexture textureWithImageNamed:@"kokaPala1"];
+    SKTexture *pad1 = [SKTexture textureWithImageNamed:@"kokaPala2"];
+    SKTexture *pad2 = [SKTexture textureWithImageNamed:@"kokaPala3"];
+    SKTexture *pad3 = [SKTexture textureWithImageNamed:@"kokaPala4"];
+    
+    NSArray *padArray = @[pad0, pad1, pad2, pad3];
+    SKAction *padKokosiAction = [SKAction animateWithNormalTextures:padArray timePerFrame:0.1];
+    repeatPad = [SKAction repeatActionForever:padKokosiAction];
+    
     
 }
 
@@ -289,12 +314,12 @@
     
     if (kokos.position.y > (self.size.height*0.1+kokos.size.height/2 + 20)){
     
-        if(!leti){[kokos runAction:repeatLet];leti=true;cupka=false;}
+       // if(!leti){[kokos runAction:repeatLet];leti=true;cupka=false;}
     
     }
     else{
         
-        if(!cupka){[kokos runAction:repeatCup];cupka=true;leti=false;}
+      //  if(!cupka){[kokos runAction:repeatCup];cupka=true;leti=false;}
     
     }
 
@@ -338,7 +363,8 @@
     self.physicsWorld.gravity = CGVectorMake(0, -9 - highScore);
     winLose.texture = win;
     playTipka.texture = nextTexture;
-    
+    highScoreString = [NSString stringWithFormat:@"Score: %li", highScore];
+    scoreLabela.text = highScoreString;
     
 }
 
@@ -346,14 +372,17 @@
 
 
 -(void)loseGame {
-
+    [kokos runAction:repeatPad];
     highScore = 0;
-    kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
+   // kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
     pobjedonosnaKokos.position = CGPointMake(self.size.width - 200, self.size.height/2);
     menuNode.position = CGPointMake(self.size.width/2, self.size.height/2);
     self.physicsWorld.gravity = CGVectorMake(0, -9);
     winLose.texture = lose;
     playTipka.texture = playTexture;
+    highScoreString = [NSString stringWithFormat:@"Score: %li", highScore];
+    scoreLabela.text = highScoreString;
+    
 
 
 }
