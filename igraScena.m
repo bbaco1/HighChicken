@@ -29,7 +29,7 @@
     SKTexture *playTexture;
     NSString *highScoreString;
     SKLabelNode *scoreLabela;
-    SKAction *repeatPad;
+    
    
 
 }
@@ -102,7 +102,7 @@
     [self addChild:kokos];
     [self addChild:pobjedonosnaKokos];
     [self dodajAnimacije];
-    [kokos runAction:repeatPad];
+    
     
 
 
@@ -125,8 +125,9 @@
 
 -(void)dodajAnimacije{
     
-    cupka=false;
-    leti=false;
+    cupka = false;
+    leti = false;
+    pao = false;
     SKTexture *cup0 = [SKTexture textureWithImageNamed:@"kokaCupka0"];
     SKTexture *cup1 = [SKTexture textureWithImageNamed:@"kokaCupka1"];
     SKTexture *cup2 = [SKTexture textureWithImageNamed:@"kokaCupka2"];
@@ -155,8 +156,8 @@
     SKTexture *pad2 = [SKTexture textureWithImageNamed:@"kokaPala3"];
     SKTexture *pad3 = [SKTexture textureWithImageNamed:@"kokaPala4"];
     
-    NSArray *padArray = @[pad0, pad1, pad2, pad3];
-    SKAction *padKokosiAction = [SKAction animateWithNormalTextures:padArray timePerFrame:0.1];
+    NSArray *padArray = @[pad0, pad1, pad2, pad3, pad2, pad1];
+    SKAction *padKokosiAction = [SKAction animateWithTextures:padArray timePerFrame:0.1];
     repeatPad = [SKAction repeatActionForever:padKokosiAction];
     
     
@@ -226,7 +227,7 @@
         
         kokos.physicsBody.dynamic = YES;
         pobjedonosnaKokos.position = CGPointMake(-200, 0);
-
+        pao = false;
         [pobjedonosnaKokos removeAllActions];
         
                 
@@ -297,10 +298,10 @@
         
     }
     
-    if (kokos.physicsBody.velocity.dy < -500 && [kokos intersectsNode:pod]) {
+    if (kokos.physicsBody.velocity.dy < -500 && [kokos intersectsNode: pod]) {
             
             
-        NSLog(@"pad");
+        NSLog(@"pad %f", kokos.physicsBody.velocity.dy );
         [self loseGame];
             
             
@@ -372,7 +373,7 @@
 
 
 -(void)loseGame {
-    [kokos runAction:repeatPad];
+    if(!pao) {[kokos runAction:repeatPad];pao=true;}
     highScore = 0;
    // kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
     pobjedonosnaKokos.position = CGPointMake(self.size.width - 200, self.size.height/2);

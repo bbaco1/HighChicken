@@ -12,7 +12,8 @@
 {
     SKAction *repeatCup;
     SKAction *repeatLet;
-    bool cupka,leti;
+    SKAction *repeatPad;
+    bool cupka,leti,pao;
     SKSpriteNode *oblak1, *oblak2;
 }
 
