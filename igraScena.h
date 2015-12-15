@@ -7,8 +7,9 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import <GameKit/GameKit.h>
 
-@interface igraScena : SKScene
+@interface igraScena : SKScene<GKGameCenterControllerDelegate>
 {
     SKAction *repeatCup;
     SKAction *repeatLet;

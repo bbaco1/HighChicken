@@ -53,6 +53,8 @@
 		ECDE211F1C1F65740031CE5F /* puff.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE211E1C1F65740031CE5F /* puff.png */; };
 		ECDE21211C1F76360031CE5F /* oblak4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21201C1F76360031CE5F /* oblak4.png */; };
 		ECDE21231C1F77220031CE5F /* sjena.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21221C1F77220031CE5F /* sjena.png */; };
+		ECF1A9FD1C2059FC005829A0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF1A9FC1C2059FC005829A0 /* GameKit.framework */; };
+		ECF1AA001C205B3B005829A0 /* gameCenterFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */; };
 		ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */; };
 		ECFB9CC51C1DE448008A3E96 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC41C1DE448008A3E96 /* play.png */; };
 		ECFB9CC91C1DE7A3008A3E96 /* leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC81C1DE7A3008A3E96 /* leaderboard.png */; };
@@ -135,6 +137,9 @@
 		ECDE211E1C1F65740031CE5F /* puff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puff.png; sourceTree = "<group>"; };
 		ECDE21201C1F76360031CE5F /* oblak4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak4.png; sourceTree = "<group>"; };
 		ECDE21221C1F77220031CE5F /* sjena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sjena.png; sourceTree = "<group>"; };
+		ECF1A9FC1C2059FC005829A0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameCenterFiles.h; sourceTree = "<group>"; };
+		ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameCenterFiles.m; sourceTree = "<group>"; };
 		ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = izbornik.png; sourceTree = "<group>"; };
 		ECFB9CC41C1DE448008A3E96 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		ECFB9CC81C1DE7A3008A3E96 /* leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboard.png; sourceTree = "<group>"; };
@@ -148,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF1A9FD1C2059FC005829A0 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +225,9 @@
 		EC678F851C1891FD003D80D4 = {
 			isa = PBXGroup;
 			children = (
+				ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */,
+				ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */,
+				ECF1A9FC1C2059FC005829A0 /* GameKit.framework */,
 				EC62F11E1C18BD9A00B5657C /* slike */,
 				EC678F901C1891FD003D80D4 /* HighChicken */,
 				EC678FAF1C1891FD003D80D4 /* HighChickenTests */,
@@ -351,6 +360,12 @@
 				TargetAttributes = {
 					EC678F8D1C1891FD003D80D4 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8Z7M987K48;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					EC678FAB1C1891FD003D80D4 = {
 						CreatedOnToolsVersion = 7.2;
@@ -456,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF1AA001C205B3B005829A0 /* gameCenterFiles.m in Sources */,
 				EC678F9E1C1891FD003D80D4 /* GameViewController.m in Sources */,
 				EC678FCB1C18BA07003D80D4 /* igraScena.m in Sources */,
 				EC678F961C1891FD003D80D4 /* AppDelegate.m in Sources */,
@@ -601,11 +617,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HighChicken/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orzes.HighChicken;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -613,11 +632,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HighChicken/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orzes.HighChicken;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
