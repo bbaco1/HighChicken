@@ -8,6 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import <GameKit/GameKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 
 @interface igraScena : SKScene<GKGameCenterControllerDelegate>

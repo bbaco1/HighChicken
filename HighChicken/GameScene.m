@@ -97,7 +97,6 @@
         SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:0.4];
         [self.view presentScene:igra transition:tranzicija];
     
-    
     }
 
 

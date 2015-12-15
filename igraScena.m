@@ -31,6 +31,10 @@
     SKTexture *playTexture;
     NSString *highScoreString;
     SKLabelNode *scoreLabela;
+    AVAudioPlayer *flySound;
+    AVAudioPlayer *winSound;
+    AVAudioPlayer *loseSound;
+    
     
    
 
@@ -57,8 +61,24 @@
     [self addChild:scoreLabela];
     [[gameCenterFiles sharedInstance]authenticateLocalUser];
     
-   
-
+    NSURL *flyUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"let" ofType:@"mp3"]];
+    
+    flySound = [[AVAudioPlayer alloc]initWithContentsOfURL:flyUrl error:nil];
+    [flySound prepareToPlay];
+    
+    
+    NSURL *winUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"WinSound" ofType:@"mp3"]];
+    
+    winSound = [[AVAudioPlayer alloc]initWithContentsOfURL:winUrl error:nil];
+    [winSound prepareToPlay];
+    
+    NSURL *loseUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"GameOverSound" ofType:@"mp3"]];
+    
+    loseSound = [[AVAudioPlayer alloc]initWithContentsOfURL:loseUrl error:nil];
+    [loseSound prepareToPlay];
+    
+    
+    
 
 
 }
@@ -237,6 +257,7 @@
     if (p.y < self.size.height*0.8 && menuNode.position.y != self.size.height/2) {
         
         [kokos.physicsBody applyImpulse:CGVectorMake(0, 45)];
+        [flySound play];
         
     }
     
@@ -401,6 +422,7 @@
     playTipka.texture = nextTexture;
     highScoreString = [NSString stringWithFormat:@"Score: %li", highScore];
     scoreLabela.text = highScoreString;
+    [winSound play];
     
 }
 
@@ -419,7 +441,7 @@
     playTipka.texture = playTexture;
     highScoreString = [NSString stringWithFormat:@"Score: %li", highScore];
     scoreLabela.text = highScoreString;
-    
+    [loseSound play];
 
 
 }
