@@ -54,6 +54,8 @@
 		ECDE21211C1F76360031CE5F /* oblak4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21201C1F76360031CE5F /* oblak4.png */; };
 		ECDE21231C1F77220031CE5F /* sjena.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21221C1F77220031CE5F /* sjena.png */; };
 		ECDE21251C2075FB0031CE5F /* chickenN.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21241C2075FB0031CE5F /* chickenN.png */; };
+		ECE106FE1C206BC700437EE3 /* Rege.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE106FD1C206BC700437EE3 /* Rege.mp3 */; };
+		ECE107001C206D8100437EE3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE106FF1C206D8100437EE3 /* AVFoundation.framework */; };
 		ECF1A9FD1C2059FC005829A0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF1A9FC1C2059FC005829A0 /* GameKit.framework */; };
 		ECF1AA001C205B3B005829A0 /* gameCenterFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */; };
 		ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */; };
@@ -138,6 +140,8 @@
 		ECDE211E1C1F65740031CE5F /* puff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puff.png; sourceTree = "<group>"; };
 		ECDE21201C1F76360031CE5F /* oblak4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak4.png; sourceTree = "<group>"; };
 		ECDE21221C1F77220031CE5F /* sjena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sjena.png; sourceTree = "<group>"; };
+		ECE106FD1C206BC700437EE3 /* Rege.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rege.mp3; sourceTree = "<group>"; };
+		ECE106FF1C206D8100437EE3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		ECDE21241C2075FB0031CE5F /* chickenN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chickenN.png; sourceTree = "<group>"; };
 		ECF1A9FC1C2059FC005829A0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameCenterFiles.h; sourceTree = "<group>"; };
