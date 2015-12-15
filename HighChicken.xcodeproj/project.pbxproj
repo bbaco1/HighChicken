@@ -53,11 +53,11 @@
 		ECDE211F1C1F65740031CE5F /* puff.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE211E1C1F65740031CE5F /* puff.png */; };
 		ECDE21211C1F76360031CE5F /* oblak4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21201C1F76360031CE5F /* oblak4.png */; };
 		ECDE21231C1F77220031CE5F /* sjena.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21221C1F77220031CE5F /* sjena.png */; };
-		ECE106FE1C206BC700437EE3 /* Rege.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE106FD1C206BC700437EE3 /* Rege.mp3 */; };
 		ECE107001C206D8100437EE3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE106FF1C206D8100437EE3 /* AVFoundation.framework */; };
-		ECE107021C20795000437EE3 /* let.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE107011C20795000437EE3 /* let.mp3 */; };
-		ECE107041C207CCC00437EE3 /* WinSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE107031C207CCC00437EE3 /* WinSound.mp3 */; };
-		ECE107061C207CEB00437EE3 /* GameOverSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE107051C207CEB00437EE3 /* GameOverSound.mp3 */; };
+		ECE1070B1C208E5000437EE3 /* GameOverSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE107071C208E5000437EE3 /* GameOverSound.mp3 */; };
+		ECE1070C1C208E5000437EE3 /* let.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE107081C208E5000437EE3 /* let.mp3 */; };
+		ECE1070D1C208E5000437EE3 /* Rege.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE107091C208E5000437EE3 /* Rege.mp3 */; };
+		ECE1070E1C208E5000437EE3 /* WinSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE1070A1C208E5000437EE3 /* WinSound.mp3 */; };
 		ECF1A9FD1C2059FC005829A0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF1A9FC1C2059FC005829A0 /* GameKit.framework */; };
 		ECF1AA001C205B3B005829A0 /* gameCenterFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */; };
 		ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */; };
@@ -142,11 +142,11 @@
 		ECDE211E1C1F65740031CE5F /* puff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puff.png; sourceTree = "<group>"; };
 		ECDE21201C1F76360031CE5F /* oblak4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak4.png; sourceTree = "<group>"; };
 		ECDE21221C1F77220031CE5F /* sjena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sjena.png; sourceTree = "<group>"; };
-		ECE106FD1C206BC700437EE3 /* Rege.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rege.mp3; sourceTree = "<group>"; };
 		ECE106FF1C206D8100437EE3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		ECE107011C20795000437EE3 /* let.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = let.mp3; sourceTree = "<group>"; };
-		ECE107031C207CCC00437EE3 /* WinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WinSound.mp3; sourceTree = "<group>"; };
-		ECE107051C207CEB00437EE3 /* GameOverSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GameOverSound.mp3; sourceTree = "<group>"; };
+		ECE107071C208E5000437EE3 /* GameOverSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GameOverSound.mp3; sourceTree = "<group>"; };
+		ECE107081C208E5000437EE3 /* let.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = let.mp3; sourceTree = "<group>"; };
+		ECE107091C208E5000437EE3 /* Rege.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rege.mp3; sourceTree = "<group>"; };
+		ECE1070A1C208E5000437EE3 /* WinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WinSound.mp3; sourceTree = "<group>"; };
 		ECF1A9FC1C2059FC005829A0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameCenterFiles.h; sourceTree = "<group>"; };
 		ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameCenterFiles.m; sourceTree = "<group>"; };
@@ -237,12 +237,12 @@
 			isa = PBXGroup;
 			children = (
 				ECE106FF1C206D8100437EE3 /* AVFoundation.framework */,
-				ECE106FD1C206BC700437EE3 /* Rege.mp3 */,
-				ECE107031C207CCC00437EE3 /* WinSound.mp3 */,
-				ECE107051C207CEB00437EE3 /* GameOverSound.mp3 */,
-				ECE107011C20795000437EE3 /* let.mp3 */,
 				ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */,
 				ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */,
+				ECE107071C208E5000437EE3 /* GameOverSound.mp3 */,
+				ECE107081C208E5000437EE3 /* let.mp3 */,
+				ECE107091C208E5000437EE3 /* Rege.mp3 */,
+				ECE1070A1C208E5000437EE3 /* WinSound.mp3 */,
 				ECF1A9FC1C2059FC005829A0 /* GameKit.framework */,
 				EC62F11E1C18BD9A00B5657C /* slike */,
 				EC678F901C1891FD003D80D4 /* HighChicken */,
@@ -427,6 +427,7 @@
 				EC17B5351C1C815F0031980E /* kucica.png in Resources */,
 				EC6AB57D1C1F1A920023C80A /* kokaPala1.png in Resources */,
 				EC62F1301C19DD1900B5657C /* glavaKoke.png in Resources */,
+				ECE1070D1C208E5000437EE3 /* Rege.mp3 in Resources */,
 				EC17B5391C1C866B0031980E /* start.png in Resources */,
 				ECDE21231C1F77220031CE5F /* sjena.png in Resources */,
 				EC62F1451C1B31D000B5657C /* kokaCupka1.png in Resources */,
@@ -434,14 +435,13 @@
 				ECDE20DE1C1CAA110031CE5F /* ograda.png in Resources */,
 				EC62F1321C19DD2200B5657C /* zjenice.png in Resources */,
 				ECDE21211C1F76360031CE5F /* oblak4.png in Resources */,
+				ECE1070B1C208E5000437EE3 /* GameOverSound.mp3 in Resources */,
 				ECDE211B1C1DF2DE0031CE5F /* oblak3.png in Resources */,
 				EC678F9B1C1891FD003D80D4 /* GameScene.sks in Resources */,
 				ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */,
 				ECFB9CC51C1DE448008A3E96 /* play.png in Resources */,
 				EC6AB57F1C1F1A920023C80A /* kokaPala3.png in Resources */,
-				ECE106FE1C206BC700437EE3 /* Rege.mp3 in Resources */,
 				EC62F1391C1B31B300B5657C /* kokaLeti0.png in Resources */,
-				ECE107061C207CEB00437EE3 /* GameOverSound.mp3 in Resources */,
 				EC62F13C1C1B31B300B5657C /* kokaLeti3.png in Resources */,
 				ECFB9CCB1C1DEA0C008A3E96 /* youLose.png in Resources */,
 				EC62F13D1C1B31B300B5657C /* kokaLeti4.png in Resources */,
@@ -452,7 +452,6 @@
 				EC62F1481C1B31D000B5657C /* kokaCupka4.png in Resources */,
 				EC62F11D1C18BD9100B5657C /* crvenaTipka1.png in Resources */,
 				EC62F12D1C19CF2E00B5657C /* dim.sks in Resources */,
-				ECE107041C207CCC00437EE3 /* WinSound.mp3 in Resources */,
 				ECDE211A1C1DF2DE0031CE5F /* oblak2.png in Resources */,
 				ECDE21191C1DF2DE0031CE5F /* oblak1.png in Resources */,
 				EC5CA55D1C1C3E2D00F3A4A1 /* podloga2.png in Resources */,
@@ -464,9 +463,10 @@
 				ECFB9CCF1C1DEEB1008A3E96 /* next.png in Resources */,
 				EC62F12A1C19C12400B5657C /* kokaSjedi.png in Resources */,
 				EC62F1441C1B31D000B5657C /* kokaCupka0.png in Resources */,
+				ECE1070E1C208E5000437EE3 /* WinSound.mp3 in Resources */,
 				ECFB9CC91C1DE7A3008A3E96 /* leaderboard.png in Resources */,
 				EC678FA11C1891FD003D80D4 /* Main.storyboard in Resources */,
-				ECE107021C20795000437EE3 /* let.mp3 in Resources */,
+				ECE1070C1C208E5000437EE3 /* let.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
