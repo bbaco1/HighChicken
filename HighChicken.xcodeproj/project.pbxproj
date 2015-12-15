@@ -155,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE107001C206D8100437EE3 /* AVFoundation.framework in Frameworks */,
 				ECF1A9FD1C2059FC005829A0 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +229,8 @@
 		EC678F851C1891FD003D80D4 = {
 			isa = PBXGroup;
 			children = (
+				ECE106FF1C206D8100437EE3 /* AVFoundation.framework */,
+				ECE106FD1C206BC700437EE3 /* Rege.mp3 */,
 				ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */,
 				ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */,
 				ECF1A9FC1C2059FC005829A0 /* GameKit.framework */,
@@ -426,6 +429,7 @@
 				ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */,
 				ECFB9CC51C1DE448008A3E96 /* play.png in Resources */,
 				EC6AB57F1C1F1A920023C80A /* kokaPala3.png in Resources */,
+				ECE106FE1C206BC700437EE3 /* Rege.mp3 in Resources */,
 				EC62F1391C1B31B300B5657C /* kokaLeti0.png in Resources */,
 				EC62F13C1C1B31B300B5657C /* kokaLeti3.png in Resources */,
 				ECFB9CCB1C1DEA0C008A3E96 /* youLose.png in Resources */,
