@@ -11,6 +11,7 @@
 @implementation igraScena{
 
     SKSpriteNode *kokos;
+    SKSpriteNode *sjena;
     SKSpriteNode *pobjedonosnaKokos;
     long maxScore;
     long highScore;
@@ -94,6 +95,7 @@
     
     
     
+    
     moveChicken = [SKAction moveTo:CGPointMake(self.size.width+80, self.size.height+40) duration:1];
     moveChicken2 = [SKAction moveTo:CGPointMake(100, 100) duration:1];
     NSArray *array = @[moveChicken, moveChicken2];
@@ -104,6 +106,8 @@
     [self dodajAnimacije];
     
     
+    
+
 
 
 }
@@ -118,9 +122,28 @@
     pod.physicsBody.dynamic = NO;
     [self addChild:pod];
 
-
-
-
+    sjena = [SKSpriteNode spriteNodeWithImageNamed:@"sjena"];
+    sjena.size = CGSizeMake(80, 15);
+    sjena.position = CGPointMake(kokos.position.x, pod.position.y+5);
+    sjena.zPosition = 4;
+    sjena.alpha = 0.6;
+    [self addChild:sjena];
+    
+    puff = [SKSpriteNode spriteNodeWithImageNamed:@"puff"];
+    puff.size = CGSizeMake(200, 20);
+    puff.position = CGPointMake(kokos.position.x, pod.position.y+10);
+    puff.zPosition = 6;
+    puff.alpha = 0.0;
+    [self addChild:puff];
+    
+    SKAction *povecajPuff = [SKAction scaleTo:1 duration:0.15];
+    SKAction *smanjiPuff = [SKAction scaleTo:0.5 duration:0.35];
+    SKAction *promjenaPuff = [SKAction sequence:@[povecajPuff,smanjiPuff]];
+    
+    SKAction *alphaPuff1 = [SKAction fadeInWithDuration:0.15];
+    SKAction *alphaPuff2 = [SKAction fadeOutWithDuration:0.35];
+    SKAction *alphaPuff = [SKAction sequence:@[alphaPuff1,alphaPuff2]];
+    puffAction = [SKAction group:@[promjenaPuff,alphaPuff]];
 }
 
 -(void)dodajAnimacije{
@@ -213,13 +236,13 @@
         
         [kokos.physicsBody applyImpulse:CGVectorMake(0, 45)];
         
-        
-        
     }
     
     if ([node.name isEqualToString:@"play"]) {
         
-        
+        cupka = false;
+        leti = false;
+        pao = false;
         
         [kokos removeAllActions];
         kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
@@ -302,6 +325,7 @@
             
             
         NSLog(@"pad %f", kokos.physicsBody.velocity.dy );
+        [puff runAction:puffAction];
         [self loseGame];
             
             
@@ -347,6 +371,8 @@
     }
     
     oblak2.position = op;
+    
+    sjena.position = CGPointMake(kokos.position.x, pod.position.y-(kokos.position.y-pod.position.y-kokos.size.height/2-50)/10);
 
 }
 
@@ -373,8 +399,9 @@
 
 
 -(void)loseGame {
-    if(!pao) {[kokos runAction:repeatPad];pao=true;}
+    if(!pao) {[kokos runAction:repeatPad];pao=true; cupka=true; leti=true;}
     highScore = 0;
+    
    // kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
     pobjedonosnaKokos.position = CGPointMake(self.size.width - 200, self.size.height/2);
     menuNode.position = CGPointMake(self.size.width/2, self.size.height/2);
