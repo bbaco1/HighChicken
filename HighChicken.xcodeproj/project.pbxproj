@@ -55,6 +55,7 @@
 		ECDE21231C1F77220031CE5F /* sjena.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21221C1F77220031CE5F /* sjena.png */; };
 		ECE106FE1C206BC700437EE3 /* Rege.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE106FD1C206BC700437EE3 /* Rege.mp3 */; };
 		ECE107001C206D8100437EE3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE106FF1C206D8100437EE3 /* AVFoundation.framework */; };
+		ECE107021C20795000437EE3 /* let.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE107011C20795000437EE3 /* let.mp3 */; };
 		ECF1A9FD1C2059FC005829A0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF1A9FC1C2059FC005829A0 /* GameKit.framework */; };
 		ECF1AA001C205B3B005829A0 /* gameCenterFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */; };
 		ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */; };
@@ -141,6 +142,7 @@
 		ECDE21221C1F77220031CE5F /* sjena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sjena.png; sourceTree = "<group>"; };
 		ECE106FD1C206BC700437EE3 /* Rege.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rege.mp3; sourceTree = "<group>"; };
 		ECE106FF1C206D8100437EE3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		ECE107011C20795000437EE3 /* let.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = let.mp3; sourceTree = "<group>"; };
 		ECF1A9FC1C2059FC005829A0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameCenterFiles.h; sourceTree = "<group>"; };
 		ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameCenterFiles.m; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			children = (
 				ECE106FF1C206D8100437EE3 /* AVFoundation.framework */,
 				ECE106FD1C206BC700437EE3 /* Rege.mp3 */,
+				ECE107011C20795000437EE3 /* let.mp3 */,
 				ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */,
 				ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */,
 				ECF1A9FC1C2059FC005829A0 /* GameKit.framework */,
@@ -455,6 +458,7 @@
 				EC62F1441C1B31D000B5657C /* kokaCupka0.png in Resources */,
 				ECFB9CC91C1DE7A3008A3E96 /* leaderboard.png in Resources */,
 				EC678FA11C1891FD003D80D4 /* Main.storyboard in Resources */,
+				ECE107021C20795000437EE3 /* let.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

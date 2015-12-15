@@ -31,6 +31,8 @@
     SKTexture *playTexture;
     NSString *highScoreString;
     SKLabelNode *scoreLabela;
+    AVAudioPlayer *flySound;
+    
     
    
 
@@ -57,8 +59,11 @@
     [self addChild:scoreLabela];
     [[gameCenterFiles sharedInstance]authenticateLocalUser];
     
-   
-
+    NSURL *flyUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"let" ofType:@"mp3"]];
+    
+    flySound = [[AVAudioPlayer alloc]initWithContentsOfURL:flyUrl error:nil];
+    [flySound prepareToPlay];
+    
 
 
 }
@@ -237,6 +242,7 @@
     if (p.y < self.size.height*0.8 && menuNode.position.y != self.size.height/2) {
         
         [kokos.physicsBody applyImpulse:CGVectorMake(0, 45)];
+        [flySound play];
         
     }
     
