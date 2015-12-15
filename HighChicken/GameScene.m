@@ -9,7 +9,13 @@
 #import "GameScene.h"
 #import "igraScena.h"
 
-@implementation GameScene
+@implementation GameScene{
+
+    AVAudioPlayer *menuGlazba;
+
+}
+
+
 
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
@@ -69,6 +75,15 @@
     tipka.name = @"start";
     tipka.zPosition=1;
     [self addChild:tipka];
+    
+    NSURL *menuPjesma = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"Rege" ofType:@"mp3"]];
+    
+    menuGlazba = [[AVAudioPlayer alloc]initWithContentsOfURL:menuPjesma error:nil];
+    [menuGlazba play];
+    menuGlazba.numberOfLoops = -1;
+    
+                         
+    
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

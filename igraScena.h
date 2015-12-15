@@ -9,6 +9,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import <GameKit/GameKit.h>
 
+
 @interface igraScena : SKScene<GKGameCenterControllerDelegate>
 {
     SKAction *repeatCup;
@@ -18,6 +19,7 @@
     bool cupka,leti,pao;
     SKSpriteNode *oblak1, *oblak2;
     SKSpriteNode *puff;
+    
 }
 
 @end

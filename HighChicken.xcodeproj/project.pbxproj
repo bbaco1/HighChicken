@@ -53,6 +53,8 @@
 		ECDE211F1C1F65740031CE5F /* puff.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE211E1C1F65740031CE5F /* puff.png */; };
 		ECDE21211C1F76360031CE5F /* oblak4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21201C1F76360031CE5F /* oblak4.png */; };
 		ECDE21231C1F77220031CE5F /* sjena.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21221C1F77220031CE5F /* sjena.png */; };
+		ECE106FE1C206BC700437EE3 /* Rege.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECE106FD1C206BC700437EE3 /* Rege.mp3 */; };
+		ECE107001C206D8100437EE3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE106FF1C206D8100437EE3 /* AVFoundation.framework */; };
 		ECF1A9FD1C2059FC005829A0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF1A9FC1C2059FC005829A0 /* GameKit.framework */; };
 		ECF1AA001C205B3B005829A0 /* gameCenterFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */; };
 		ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */; };
@@ -137,6 +139,8 @@
 		ECDE211E1C1F65740031CE5F /* puff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puff.png; sourceTree = "<group>"; };
 		ECDE21201C1F76360031CE5F /* oblak4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak4.png; sourceTree = "<group>"; };
 		ECDE21221C1F77220031CE5F /* sjena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sjena.png; sourceTree = "<group>"; };
+		ECE106FD1C206BC700437EE3 /* Rege.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rege.mp3; sourceTree = "<group>"; };
+		ECE106FF1C206D8100437EE3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		ECF1A9FC1C2059FC005829A0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameCenterFiles.h; sourceTree = "<group>"; };
 		ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameCenterFiles.m; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE107001C206D8100437EE3 /* AVFoundation.framework in Frameworks */,
 				ECF1A9FD1C2059FC005829A0 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +230,8 @@
 		EC678F851C1891FD003D80D4 = {
 			isa = PBXGroup;
 			children = (
+				ECE106FF1C206D8100437EE3 /* AVFoundation.framework */,
+				ECE106FD1C206BC700437EE3 /* Rege.mp3 */,
 				ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */,
 				ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */,
 				ECF1A9FC1C2059FC005829A0 /* GameKit.framework */,
@@ -423,6 +430,7 @@
 				ECFB9CC31C1DE3A5008A3E96 /* izbornik.png in Resources */,
 				ECFB9CC51C1DE448008A3E96 /* play.png in Resources */,
 				EC6AB57F1C1F1A920023C80A /* kokaPala3.png in Resources */,
+				ECE106FE1C206BC700437EE3 /* Rege.mp3 in Resources */,
 				EC62F1391C1B31B300B5657C /* kokaLeti0.png in Resources */,
 				EC62F13C1C1B31B300B5657C /* kokaLeti3.png in Resources */,
 				ECFB9CCB1C1DEA0C008A3E96 /* youLose.png in Resources */,
