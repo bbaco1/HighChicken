@@ -125,11 +125,25 @@
     sjena = [SKSpriteNode spriteNodeWithImageNamed:@"sjena"];
     sjena.size = CGSizeMake(80, 15);
     sjena.position = CGPointMake(kokos.position.x, pod.position.y+5);
-    sjena.zPosition = 5;
-    sjena.alpha = 0.7;
+    sjena.zPosition = 4;
+    sjena.alpha = 0.6;
     [self addChild:sjena];
-
-
+    
+    puff = [SKSpriteNode spriteNodeWithImageNamed:@"puff"];
+    puff.size = CGSizeMake(200, 20);
+    puff.position = CGPointMake(kokos.position.x, pod.position.y+10);
+    puff.zPosition = 6;
+    puff.alpha = 0.0;
+    [self addChild:puff];
+    
+    SKAction *povecajPuff = [SKAction scaleTo:1 duration:0.15];
+    SKAction *smanjiPuff = [SKAction scaleTo:0.5 duration:0.35];
+    SKAction *promjenaPuff = [SKAction sequence:@[povecajPuff,smanjiPuff]];
+    
+    SKAction *alphaPuff1 = [SKAction fadeInWithDuration:0.15];
+    SKAction *alphaPuff2 = [SKAction fadeOutWithDuration:0.35];
+    SKAction *alphaPuff = [SKAction sequence:@[alphaPuff1,alphaPuff2]];
+    puffAction = [SKAction group:@[promjenaPuff,alphaPuff]];
 }
 
 -(void)dodajAnimacije{
@@ -222,8 +236,6 @@
         
         [kokos.physicsBody applyImpulse:CGVectorMake(0, 45)];
         
-        
-        
     }
     
     if ([node.name isEqualToString:@"play"]) {
@@ -313,7 +325,7 @@
             
             
         NSLog(@"pad %f", kokos.physicsBody.velocity.dy );
-       
+        [puff runAction:puffAction];
         [self loseGame];
             
             
@@ -360,7 +372,7 @@
     
     oblak2.position = op;
     
-    sjena.position = CGPointMake(kokos.position.x, pod.position.y-(kokos.position.y-pod.position.y-kokos.size.height/2-30)/10);
+    sjena.position = CGPointMake(kokos.position.x, pod.position.y-(kokos.position.y-pod.position.y-kokos.size.height/2-50)/10);
 
 }
 
