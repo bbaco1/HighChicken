@@ -32,6 +32,8 @@
     NSString *highScoreString;
     SKLabelNode *scoreLabela;
     AVAudioPlayer *flySound;
+    AVAudioPlayer *winSound;
+    AVAudioPlayer *loseSound;
     
     
    
@@ -63,6 +65,19 @@
     
     flySound = [[AVAudioPlayer alloc]initWithContentsOfURL:flyUrl error:nil];
     [flySound prepareToPlay];
+    
+    
+    NSURL *winUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"WinSound" ofType:@"mp3"]];
+    
+    winSound = [[AVAudioPlayer alloc]initWithContentsOfURL:winUrl error:nil];
+    [winSound prepareToPlay];
+    
+    NSURL *loseUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"GameOverSound" ofType:@"mp3"]];
+    
+    loseSound = [[AVAudioPlayer alloc]initWithContentsOfURL:loseUrl error:nil];
+    [loseSound prepareToPlay];
+    
+    
     
 
 
@@ -407,6 +422,7 @@
     playTipka.texture = nextTexture;
     highScoreString = [NSString stringWithFormat:@"Score: %li", highScore];
     scoreLabela.text = highScoreString;
+    [winSound play];
     
 }
 
@@ -425,7 +441,7 @@
     playTipka.texture = playTexture;
     highScoreString = [NSString stringWithFormat:@"Score: %li", highScore];
     scoreLabela.text = highScoreString;
-    
+    [loseSound play];
 
 
 }
