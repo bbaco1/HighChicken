@@ -315,12 +315,12 @@
     
     if (kokos.position.y > (self.size.height*0.1+kokos.size.height/2 + 20)){
     
-       // if(!leti){[kokos runAction:repeatLet];leti=true;cupka=false;}
+        if(!leti){[kokos runAction:repeatLet];leti=true;cupka=false;}
     
     }
     else{
         
-      //  if(!cupka){[kokos runAction:repeatCup];cupka=true;leti=false;}
+        if(!cupka){[kokos runAction:repeatCup];cupka=true;leti=false;}
     
     }
 
