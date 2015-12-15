@@ -184,6 +184,7 @@
 		EC62F11E1C18BD9A00B5657C /* slike */ = {
 			isa = PBXGroup;
 			children = (
+				ECDE21241C2075FB0031CE5F /* chickenN.png */,
 				ECDE211E1C1F65740031CE5F /* puff.png */,
 				ECDE21221C1F77220031CE5F /* sjena.png */,
 				EC6AB5791C1F1A920023C80A /* kokaPala1.png */,
@@ -443,6 +444,7 @@
 				EC17B5371C1C82DB0031980E /* trava.png in Resources */,
 				EC62F1241C18ECB300B5657C /* kokosinjac2.png in Resources */,
 				EC62F1481C1B31D000B5657C /* kokaCupka4.png in Resources */,
+				ECDE21251C2075FB0031CE5F /* chickenN.png in Resources */,
 				EC62F11D1C18BD9100B5657C /* crvenaTipka1.png in Resources */,
 				EC62F12D1C19CF2E00B5657C /* dim.sks in Resources */,
 				ECDE211A1C1DF2DE0031CE5F /* oblak2.png in Resources */,
