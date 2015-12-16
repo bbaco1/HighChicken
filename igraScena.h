@@ -10,6 +10,8 @@
 #import <GameKit/GameKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+extern NSInteger platforma;
+
 
 @interface igraScena : SKScene<GKGameCenterControllerDelegate>
 {
