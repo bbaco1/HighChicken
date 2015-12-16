@@ -10,6 +10,7 @@
 		EC17B5351C1C815F0031980E /* kucica.png in Resources */ = {isa = PBXBuildFile; fileRef = EC17B5341C1C815F0031980E /* kucica.png */; };
 		EC17B5371C1C82DB0031980E /* trava.png in Resources */ = {isa = PBXBuildFile; fileRef = EC17B5361C1C82DB0031980E /* trava.png */; };
 		EC17B5391C1C866B0031980E /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = EC17B5381C1C866B0031980E /* start.png */; };
+		EC5AF9621C21BB3A00542C1B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5AF9611C21BB3A00542C1B /* iAd.framework */; };
 		EC5CA55D1C1C3E2D00F3A4A1 /* podloga2.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5CA55C1C1C3E2D00F3A4A1 /* podloga2.png */; };
 		EC62F11D1C18BD9100B5657C /* crvenaTipka1.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F11C1C18BD9100B5657C /* crvenaTipka1.png */; };
 		EC62F1221C18EA4500B5657C /* gnijezdo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F1211C18EA4500B5657C /* gnijezdo.png */; };
@@ -91,6 +92,7 @@
 		EC17B5341C1C815F0031980E /* kucica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kucica.png; sourceTree = "<group>"; };
 		EC17B5361C1C82DB0031980E /* trava.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trava.png; sourceTree = "<group>"; };
 		EC17B5381C1C866B0031980E /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		EC5AF9611C21BB3A00542C1B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		EC5CA55C1C1C3E2D00F3A4A1 /* podloga2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = podloga2.png; sourceTree = "<group>"; };
 		EC62F11C1C18BD9100B5657C /* crvenaTipka1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crvenaTipka1.png; path = HighChicken/crvenaTipka1.png; sourceTree = "<group>"; };
 		EC62F1211C18EA4500B5657C /* gnijezdo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gnijezdo.png; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5AF9621C21BB3A00542C1B /* iAd.framework in Frameworks */,
 				ECE107001C206D8100437EE3 /* AVFoundation.framework in Frameworks */,
 				ECF1A9FD1C2059FC005829A0 /* GameKit.framework in Frameworks */,
 			);
@@ -238,6 +241,7 @@
 		EC678F851C1891FD003D80D4 = {
 			isa = PBXGroup;
 			children = (
+				EC5AF9611C21BB3A00542C1B /* iAd.framework */,
 				ECE106FF1C206D8100437EE3 /* AVFoundation.framework */,
 				ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */,
 				ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */,
