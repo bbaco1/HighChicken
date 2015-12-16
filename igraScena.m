@@ -103,6 +103,32 @@
     highScore = 0;
     
     kokos = [SKSpriteNode spriteNodeWithImageNamed:@"kokaCupka0"];
+    
+    if (platforma == 4) {
+        
+        
+        
+    }else if (platforma == 5){
+    
+    
+    
+    }else if (platforma == 5){
+    
+    
+    
+    }else if (platforma == 6){
+    
+    
+    
+    
+    }else if (platforma == 7){
+    
+    
+    
+    }
+    
+    
+    
     kokos.size = CGSizeMake(100, 100);
     kokos.position = CGPointMake(self.size.width/2, self.size.height/2);
     kokos.zPosition = 5;
@@ -214,19 +240,45 @@
     trava.size = CGSizeMake(self.size.width, self.size.height/5);
     trava.position = CGPointMake(self.size.width/2, trava.size.height/2);
     trava.zPosition = 1;
-    [self addChild:trava];
+    
     
     SKSpriteNode *ograda = [SKSpriteNode spriteNodeWithImageNamed:@"ograda"];
     ograda.size = CGSizeMake(self.size.width/2-50, self.size.height/2);
     ograda.position = CGPointMake(self.size.width-ograda.size.width/2 - 5, self.size.height/2.8);
     ograda.name = @"ograda";
     ograda.zPosition = 2;
-    [self addChild:ograda];
+   
 
     SKSpriteNode *kuca = [SKSpriteNode spriteNodeWithImageNamed:@"kucica"];
     kuca.size = CGSizeMake(self.size.width/3, self.size.height/6);
     kuca.position = CGPointMake(kuca.size.width/2+30, trava.size.height-10 + kuca.size.height/2);
     kuca.zPosition = 2;
+    
+    if (platforma == 4) {
+        
+        
+        
+    }else if (platforma == 5){
+        
+        
+        
+    }else if (platforma == 5){
+        
+        
+        
+    }else if (platforma == 6){
+        
+        
+        
+        
+    }else if (platforma == 7){
+        
+        
+        
+    }
+
+    [self addChild:trava];
+    [self addChild:ograda];
     [self addChild:kuca];
  
 }
@@ -237,14 +289,42 @@
     oblak1.size = CGSizeMake(160, 80);
     oblak1.position = CGPointMake(self.size.width, self.size.height/1.3);
     oblak1.zPosition = 1;
-    [self addChild:oblak1];
+    
     
     oblak2 = [SKSpriteNode spriteNodeWithImageNamed:@"oblak2"];
     oblak2.size = CGSizeMake(160, 80);
     oblak2.position = CGPointMake(self.size.width+120, self.size.height/1.4);
     oblak2.zPosition = 1;
-    [self addChild:oblak2];
+    if (platforma == 4) {
+        
+        
+        
+    }else if (platforma == 5){
+        
+        
+        
+    }else if (platforma == 5){
+        
+        
+        
+    }else if (platforma == 6){
+        
+        
+        
+        
+    }else if (platforma == 7){
+        
+        
+        
+    }
 
+    
+    
+    
+    
+    
+    [self addChild:oblak2];
+    [self addChild:oblak1];
 
 }
 

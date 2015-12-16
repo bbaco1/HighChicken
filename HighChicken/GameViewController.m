@@ -34,8 +34,8 @@
     
     if ([platform isEqualToString:@"iPhone5,1"] || [platform isEqualToString:@"iPhone5,2"] || [platform isEqualToString:@"iPhone5,3"] || [platform isEqualToString:@"iPhone5,4"] || [platform isEqualToString:@"iPhone6,1"] || [platform isEqualToString:@"iPhone6,2"]) {platforma=5;}
     
-    if ([platform isEqualToString:@"iPhone7,2"]) {platforma=6;}
-    if ([platform isEqualToString:@"iPhone7,1"]) {platforma=7;}
+    if ([platform isEqualToString:@"iPhone7,2"] || [platform isEqualToString:@"iPhone8,1"]) {platforma=6;}
+    if ([platform isEqualToString:@"iPhone7,1"] || [platform isEqualToString:@"iPhone8,2"]) {platforma=7;}
     
     NSLog(@"Izabrani broj%ld",(long)platforma);
 
