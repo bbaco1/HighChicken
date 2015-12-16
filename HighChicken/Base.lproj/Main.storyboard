@@ -21,7 +21,7 @@
                             <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="pcd-D0-8AH">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <connections>
-                                    <outlet property="delegate" destination="3se-qz-xqx" id="Bj4-sV-yfO"/>
+                                    <outlet property="delegate" destination="BV1-FR-VrT" id="2JP-iM-b8W"/>
                                 </connections>
                             </adBannerView>
                         </subviews>
