@@ -77,6 +77,8 @@
     loseSound = [[AVAudioPlayer alloc]initWithContentsOfURL:loseUrl error:nil];
     [loseSound prepareToPlay];
     
+    maxScore = 0;
+    
     
     
 
@@ -519,6 +521,16 @@
     scoreLabela.text = highScoreString;
     [winSound play];
     
+    
+    
+    if (highScore > maxScore) {
+        maxScore = highScore;
+        [self reportScore];
+        
+        NSLog(@"trebao bi slat score");
+    }
+    
+    
 }
 
 
@@ -567,7 +579,7 @@
     if (gameCenterController != nil) {
         gameCenterController.gameCenterDelegate = self;
         gameCenterController.viewState = GKGameCenterViewControllerStateLeaderboards;
-        gameCenterController.leaderboardIdentifier = @"globalScore";
+        gameCenterController.leaderboardIdentifier = @"maxScore";
         
         [viewController presentViewController: gameCenterController animated: YES completion:nil];
     }
@@ -597,7 +609,17 @@
     }];
 }
 
-
+-(void)reportScore{
+    
+    GKScore *highScoreS = [[GKScore alloc]initWithLeaderboardIdentifier:@"maxScore"];
+    highScoreS.value = maxScore;
+    
+    [GKScore reportScores:@[highScoreS] withCompletionHandler:^(NSError *error) {
+        if (error != nil) {
+            NSLog(@"%@", [error localizedDescription]);
+        }
+    }];
+}
 
 
 
