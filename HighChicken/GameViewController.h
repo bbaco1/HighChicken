@@ -10,6 +10,13 @@
 #import <SpriteKit/SpriteKit.h>
 #import <iAd/iAd.h>
 
-@interface GameViewController : UIViewController <ADBannerViewDelegate>
+extern NSString *platform;
+extern NSInteger platforma;
+
+@interface GameViewController : UIViewController <ADBannerViewDelegate>{
+
+
+
+}
 
 @end
