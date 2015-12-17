@@ -153,13 +153,13 @@
 		ECDE21201C1F76360031CE5F /* oblak4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak4.png; sourceTree = "<group>"; };
 		ECDE21221C1F77220031CE5F /* sjena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sjena.png; sourceTree = "<group>"; };
 		ECE106FF1C206D8100437EE3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		ECE107071C208E5000437EE3 /* GameOverSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GameOverSound.mp3; sourceTree = "<group>"; };
-		ECE107081C208E5000437EE3 /* let.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = let.mp3; sourceTree = "<group>"; };
-		ECE107091C208E5000437EE3 /* Rege.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rege.mp3; sourceTree = "<group>"; };
-		ECE1070A1C208E5000437EE3 /* WinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WinSound.mp3; sourceTree = "<group>"; };
+		ECE107071C208E5000437EE3 /* GameOverSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = GameOverSound.mp3; path = ../GameOverSound.mp3; sourceTree = "<group>"; };
+		ECE107081C208E5000437EE3 /* let.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = let.mp3; path = ../let.mp3; sourceTree = "<group>"; };
+		ECE107091C208E5000437EE3 /* Rege.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Rege.mp3; path = ../Rege.mp3; sourceTree = "<group>"; };
+		ECE1070A1C208E5000437EE3 /* WinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = WinSound.mp3; path = ../WinSound.mp3; sourceTree = "<group>"; };
 		ECF1A9FC1C2059FC005829A0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameCenterFiles.h; sourceTree = "<group>"; };
-		ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameCenterFiles.m; sourceTree = "<group>"; };
+		ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gameCenterFiles.h; path = ../gameCenterFiles.h; sourceTree = "<group>"; };
+		ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gameCenterFiles.m; path = ../gameCenterFiles.m; sourceTree = "<group>"; };
 		ECFB9CC21C1DE3A5008A3E96 /* izbornik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = izbornik.png; sourceTree = "<group>"; };
 		ECFB9CC41C1DE448008A3E96 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		ECFB9CC81C1DE7A3008A3E96 /* leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboard.png; sourceTree = "<group>"; };
@@ -255,12 +255,6 @@
 				EC7B68D01C2343BB00239879 /* Social.framework */,
 				EC5AF9611C21BB3A00542C1B /* iAd.framework */,
 				ECE106FF1C206D8100437EE3 /* AVFoundation.framework */,
-				ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */,
-				ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */,
-				ECE107071C208E5000437EE3 /* GameOverSound.mp3 */,
-				ECE107081C208E5000437EE3 /* let.mp3 */,
-				ECE107091C208E5000437EE3 /* Rege.mp3 */,
-				ECE1070A1C208E5000437EE3 /* WinSound.mp3 */,
 				ECF1A9FC1C2059FC005829A0 /* GameKit.framework */,
 				EC62F11E1C18BD9A00B5657C /* slike */,
 				EC678F901C1891FD003D80D4 /* HighChicken */,
@@ -293,6 +287,8 @@
 				EC678F9F1C1891FD003D80D4 /* Main.storyboard */,
 				EC678FC91C18BA07003D80D4 /* igraScena.h */,
 				EC678FCA1C18BA07003D80D4 /* igraScena.m */,
+				ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */,
+				ECF1A9FF1C205B3B005829A0 /* gameCenterFiles.m */,
 				EC678FA21C1891FD003D80D4 /* Assets.xcassets */,
 				EC678FA41C1891FD003D80D4 /* LaunchScreen.storyboard */,
 				EC678FA71C1891FD003D80D4 /* Info.plist */,
@@ -304,6 +300,10 @@
 		EC678F911C1891FD003D80D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ECE107071C208E5000437EE3 /* GameOverSound.mp3 */,
+				ECE107081C208E5000437EE3 /* let.mp3 */,
+				ECE107091C208E5000437EE3 /* Rege.mp3 */,
+				ECE1070A1C208E5000437EE3 /* WinSound.mp3 */,
 				EC678F921C1891FD003D80D4 /* main.m */,
 			);
 			name = "Supporting Files";
