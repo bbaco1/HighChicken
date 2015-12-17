@@ -9,6 +9,8 @@
 #import <SpriteKit/SpriteKit.h>
 #import <GameKit/GameKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <Social/Social.h>
+#import <Twitter/Twitter.h>
 
 extern NSInteger platforma;
 

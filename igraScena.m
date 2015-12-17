@@ -368,7 +368,20 @@
         
     }
     
-   
+    if ([node.name isEqualToString:@"facebook"]) {
+        
+        [self HFacebookShare];
+        
+        
+    }
+    
+    if ([node.name isEqualToString:@"tweeter"]) {
+        
+        [self HTwitterShare];
+        
+        
+    }
+
 
 
 
@@ -425,6 +438,49 @@
     
     }
 
+-(UIImage*)snapshot
+{
+    UIGraphicsBeginImageContextWithOptions(self.view.frame.size, YES, [UIScreen mainScreen].scale);
+    [self.view drawViewHierarchyInRect:self.view.bounds afterScreenUpdates:YES];
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return viewImage;
+}
+
+
+- (void)HFacebookShare {
+    
+    UIImage *viewImage=[self snapshot];;
+    
+    SLComposeViewController *mySLComposeSheet;
+    mySLComposeSheet=[[SLComposeViewController alloc] init];
+    mySLComposeSheet=[SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+    [mySLComposeSheet addURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/highchicken/id835898711?l=hr&ls=1&mt=8"]];
+    [mySLComposeSheet setInitialText:@""];
+    [mySLComposeSheet addImage:viewImage];
+    UIViewController *vc=self.view.window.rootViewController;
+    [vc presentViewController: mySLComposeSheet animated:YES completion:NULL];
+    
+}
+
+
+- (void)HTwitterShare {
+    
+    UIImage *viewImage=[self snapshot];;
+    
+    SLComposeViewController *mySLComposeSheet;
+    mySLComposeSheet=[[SLComposeViewController alloc] init];
+    mySLComposeSheet=[SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+    [mySLComposeSheet addURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/highchicken/id835898711?l=hr&ls=1&mt=8"]];
+    [mySLComposeSheet setInitialText:@""];
+    [mySLComposeSheet addImage:viewImage];
+    UIViewController *vc=self.view.window.rootViewController;
+    [vc presentViewController: mySLComposeSheet animated:YES completion:NULL];
+    
+    
+}
+
+
 -(void)update:(NSTimeInterval)currentTime{
 
 
@@ -442,9 +498,6 @@
             [self saveMaxScore];
             
         }
-        
-        
-        
         
     }
     

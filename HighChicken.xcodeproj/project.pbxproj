@@ -48,6 +48,8 @@
 		EC6AB5801C1F1A920023C80A /* kokaPala4.png in Resources */ = {isa = PBXBuildFile; fileRef = EC6AB57C1C1F1A920023C80A /* kokaPala4.png */; };
 		EC7B68CD1C2326E600239879 /* twiter.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7B68CC1C2326E600239879 /* twiter.png */; };
 		EC7B68CF1C2326EF00239879 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7B68CE1C2326EF00239879 /* facebook.png */; };
+		EC7B68D11C2343BB00239879 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B68D01C2343BB00239879 /* Social.framework */; };
+		EC7B68D31C23444200239879 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B68D21C23444200239879 /* Twitter.framework */; };
 		ECDE20DE1C1CAA110031CE5F /* ograda.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE20DD1C1CAA110031CE5F /* ograda.png */; };
 		ECDE21191C1DF2DE0031CE5F /* oblak1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21141C1DF2DE0031CE5F /* oblak1.png */; };
 		ECDE211A1C1DF2DE0031CE5F /* oblak2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21151C1DF2DE0031CE5F /* oblak2.png */; };
@@ -140,6 +142,8 @@
 		EC6AB57C1C1F1A920023C80A /* kokaPala4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kokaPala4.png; sourceTree = "<group>"; };
 		EC7B68CC1C2326E600239879 /* twiter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twiter.png; sourceTree = "<group>"; };
 		EC7B68CE1C2326EF00239879 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		EC7B68D01C2343BB00239879 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		EC7B68D21C23444200239879 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		ECDE20DD1C1CAA110031CE5F /* ograda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ograda.png; sourceTree = "<group>"; };
 		ECDE21141C1DF2DE0031CE5F /* oblak1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak1.png; sourceTree = "<group>"; };
 		ECDE21151C1DF2DE0031CE5F /* oblak2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak2.png; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7B68D31C23444200239879 /* Twitter.framework in Frameworks */,
+				EC7B68D11C2343BB00239879 /* Social.framework in Frameworks */,
 				EC5AF9621C21BB3A00542C1B /* iAd.framework in Frameworks */,
 				ECE107001C206D8100437EE3 /* AVFoundation.framework in Frameworks */,
 				ECF1A9FD1C2059FC005829A0 /* GameKit.framework in Frameworks */,
@@ -245,6 +251,8 @@
 		EC678F851C1891FD003D80D4 = {
 			isa = PBXGroup;
 			children = (
+				EC7B68D21C23444200239879 /* Twitter.framework */,
+				EC7B68D01C2343BB00239879 /* Social.framework */,
 				EC5AF9611C21BB3A00542C1B /* iAd.framework */,
 				ECE106FF1C206D8100437EE3 /* AVFoundation.framework */,
 				ECF1A9FE1C205B3B005829A0 /* gameCenterFiles.h */,
