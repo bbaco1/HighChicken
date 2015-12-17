@@ -47,7 +47,7 @@
     self.physicsWorld.gravity = CGVectorMake(0, -9);
     [self dodajKokos];
     [self dodajPod];
-    [self dodajMenuNode];
+    
     [self dodajBackground];
     [self dodajOgradu];
     [self dodajMenuNode];
@@ -405,6 +405,21 @@
      winLose.position = CGPointMake(0, 130);
      winLose.zPosition = 2;
      [menuNode addChild:winLose];
+     
+     SKSpriteNode *facebook = [SKSpriteNode spriteNodeWithImageNamed:@"facebook"];
+     facebook.size = CGSizeMake(50, 50);
+     facebook.position = CGPointMake(-50, -60);
+     facebook.zPosition = 1;
+     facebook.name = @"facebook";
+     [menuNode addChild:facebook];
+     
+     SKSpriteNode *tweeter = [SKSpriteNode spriteNodeWithImageNamed:@"twiter"];
+     tweeter.size = CGSizeMake(50, 50);
+     tweeter.position = CGPointMake(50, -60);
+     tweeter.zPosition = 1;
+     tweeter.name = @"tweeter";
+     [menuNode addChild:tweeter];
+
     
     }
 
