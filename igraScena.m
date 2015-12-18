@@ -14,6 +14,7 @@
     SKSpriteNode *kokos;
     SKSpriteNode *sjena;
     SKSpriteNode *pobjedonosnaKokos;
+    SKSpriteNode *tap;
     long maxScore;
     long highScore;
     SKSpriteNode *menuNode;
@@ -46,6 +47,13 @@
 
 -(void)didMoveToView:(SKView *)view{
     self.physicsWorld.gravity = CGVectorMake(0, -9);
+    tap = [SKSpriteNode spriteNodeWithImageNamed:@"tapToPlay"];
+    tap.zPosition = 1;
+    tap.size = CGSizeMake(100, 50);
+    tap.position = CGPointMake(self.size.width/2, self.size.height/2);
+    [self addChild:tap];
+    
+    
     
     [self dodajPod];
     [self dodajKokos];
@@ -343,6 +351,7 @@
     CGPoint p = [[touches anyObject]locationInNode:self];
     SKNode *node = [self nodeAtPoint:p];
     
+    [tap removeFromParent];
     
     if (p.y < self.size.height*0.8 && menuNode.position.y != self.size.height/2) {
         

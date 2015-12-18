@@ -29,12 +29,16 @@
     free(machine);
     
     platforma=6;
+    
     //iPhone 4S
     if ([platform isEqualToString:@"iPhone4,1"] || [platform isEqualToString:@"iPad1,1"] || [platform isEqualToString:@"iPad2,1"] || [platform isEqualToString:@"iPad2,2"]|| [platform isEqualToString:@"iPad2,3"] || [platform isEqualToString:@"iPad2,4"] || [platform isEqualToString:@"iPad2,5"] || [platform isEqualToString:@"iPad2,6"] || [platform isEqualToString:@"iPad2,7"] || [platform isEqualToString:@"iPad3,1"] || [platform isEqualToString:@"iPad3,2"] || [platform isEqualToString:@"iPad3,3"] || [platform isEqualToString:@"iPad3,4"] || [platform isEqualToString:@"iPad3,5"] || [platform isEqualToString:@"iPad3,6"] || [platform isEqualToString:@"iPad4,1"] || [platform isEqualToString:@"iPad4,2"] || [platform isEqualToString:@"iPad4,3"] || [platform isEqualToString:@"iPad4,4"] || [platform isEqualToString:@"iPad4,5"] || [platform isEqualToString:@"iPad4,6"] || [platform isEqualToString:@"iPad4,7"] || [platform isEqualToString:@"iPad4,8"] || [platform isEqualToString:@"iPad4,9"] || [platform isEqualToString:@"iPad5,3"] || [platform isEqualToString:@"iPad5,4"]) {platforma=4;}
+    
     //iPhone 5s
     if ([platform isEqualToString:@"iPhone5,1"] || [platform isEqualToString:@"iPhone5,2"] || [platform isEqualToString:@"iPhone5,3"] || [platform isEqualToString:@"iPhone5,4"] || [platform isEqualToString:@"iPhone6,1"] || [platform isEqualToString:@"iPhone6,2"]) {platforma=5;}
+    
     //iPhone 6
     if ([platform isEqualToString:@"iPhone7,2"] || [platform isEqualToString:@"iPhone8,1"]) {platforma=6;}
+    
     //iPhone 6 Plus
     if ([platform isEqualToString:@"iPhone7,1"] || [platform isEqualToString:@"iPhone8,2"]) {platforma=7;}
     
