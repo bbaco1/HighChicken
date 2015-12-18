@@ -37,7 +37,8 @@
     AVAudioPlayer *loseSound;
     AVAudioPlayer *crashSound;
     
-    
+    NSArray *podloge;
+    int brPodloge;
    
 
 }
@@ -46,6 +47,9 @@
 
 
 -(void)didMoveToView:(SKView *)view{
+    podloge = [[NSArray alloc] initWithObjects: @"podloga1", @"podloga2", @"podloga3", @"podloga4", @"podloga5", @"podloga6",
+               @"podloga7", @"podloga8", @"podloga9", @"podloga10", @"podloga11", @"podloga12",nil];
+    brPodloge = 0;
     self.physicsWorld.gravity = CGVectorMake(0, -9);
     tap = [SKSpriteNode spriteNodeWithImageNamed:@"tapToPlay"];
     tap.zPosition = 1;
@@ -102,7 +106,7 @@
 }
 -(void)dodajBackground{
 
-    SKSpriteNode *backGround = [SKSpriteNode spriteNodeWithImageNamed:@"podloga2"];
+    backGround = [SKSpriteNode spriteNodeWithImageNamed:podloge[0]];
     backGround.size = CGSizeMake(self.size.width, self.size.height);
     backGround.position = CGPointMake(self.size.width/2, self.size.height/2);
     backGround.zPosition = 0;
@@ -367,7 +371,9 @@
         pao = false;
         
         [kokos removeAllActions];
-        
+        brPodloge++;
+        if(brPodloge>11) {brPodloge=0;}
+        backGround.texture = [SKTexture textureWithImageNamed:podloge[brPodloge]];
         kokos.position = CGPointMake(self.size.width/2, pod.position.y+kokos.size.height/2+20);
         menuNode.position = CGPointMake(-200, 0);
         

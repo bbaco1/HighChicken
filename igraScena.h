@@ -24,7 +24,7 @@ extern NSInteger platforma;
     bool cupka,leti,pao;
     SKSpriteNode *oblak1, *oblak2;
     SKSpriteNode *puff;
-    
+    SKSpriteNode *backGround;
 }
 
 @end
