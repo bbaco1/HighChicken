@@ -338,7 +338,7 @@
     
     if (p.y < self.size.height*0.8 && menuNode.position.y != self.size.height/2) {
         
-        [kokos.physicsBody applyImpulse:CGVectorMake(0, 45)];
+        [kokos.physicsBody applyImpulse:CGVectorMake(0, self.size.height/14)];
         [flySound play];
         
     }
