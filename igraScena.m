@@ -189,7 +189,7 @@
     
     puff = [SKSpriteNode spriteNodeWithImageNamed:@"puff"];
     puff.size = CGSizeMake(200, 20);
-    puff.position = CGPointMake(kokos.position.x, pod.position.y+10);
+    puff.position = CGPointMake(self.size.width/2, pod.position.y+10);
     puff.zPosition = 6;
     puff.alpha = 0.0;
     [self addChild:puff];
