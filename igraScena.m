@@ -45,9 +45,9 @@
 
 -(void)didMoveToView:(SKView *)view{
     self.physicsWorld.gravity = CGVectorMake(0, -9);
-    [self dodajKokos];
-    [self dodajPod];
     
+    [self dodajPod];
+    [self dodajKokos];
     [self dodajBackground];
     [self dodajOgradu];
     [self dodajMenuNode];
@@ -132,7 +132,7 @@
     */
     
     
-    kokos.position = CGPointMake(self.size.width/2, self.size.height*0.35);
+    kokos.position = CGPointMake(self.size.width/2, pod.position.y+kokos.size.height/2+20);
     kokos.zPosition = 5;
     kokos.physicsBody = [SKPhysicsBody bodyWithTexture:kokos.texture size:kokos.size];
     kokos.physicsBody.allowsRotation = NO;
@@ -350,7 +350,8 @@
         pao = false;
         
         [kokos removeAllActions];
-        kokos.position = CGPointMake(self.size.width/2, self.size.height*0.15);
+        
+        kokos.position = CGPointMake(self.size.width/2, pod.position.y+kokos.size.height/2+20);
         menuNode.position = CGPointMake(-200, 0);
         
         kokos.physicsBody.dynamic = YES;
