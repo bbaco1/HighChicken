@@ -106,39 +106,39 @@
     
     kokos = [SKSpriteNode spriteNodeWithImageNamed:@"kokaCupka0"];
     
+    kokos.size = CGSizeMake(self.size.height/6, self.size.height/6);
+    /*
     if (platforma == 4) {
         
-        
+     kokos.size = CGSizeMake(100, 100);
         
     }else if (platforma == 5){
     
-    
-    
-    }else if (platforma == 5){
+    kokos.size = CGSizeMake(110, 110);
     
     
     
     }else if (platforma == 6){
     
-    
+    kokos.size = CGSizeMake(130, 130);
     
     
     }else if (platforma == 7){
     
-    
+    kokos.size = CGSizeMake(150, 150);
     
     }
     
+    */
     
     
-    kokos.size = CGSizeMake(100, 100);
-    kokos.position = CGPointMake(self.size.width/2, self.size.height*0.15);
+    kokos.position = CGPointMake(self.size.width/2, self.size.height*0.35);
     kokos.zPosition = 5;
     kokos.physicsBody = [SKPhysicsBody bodyWithTexture:kokos.texture size:kokos.size];
     kokos.physicsBody.allowsRotation = NO;
     
     pobjedonosnaKokos = [SKSpriteNode spriteNodeWithImageNamed:@"kokaLeti0"];
-    pobjedonosnaKokos.size = CGSizeMake(100, 100);
+    pobjedonosnaKokos.size = kokos.size;
     pobjedonosnaKokos.position = CGPointMake(-800, self.size.height-400);
     pobjedonosnaKokos.zPosition = 3;
    // pobjedonosnaKokos.physicsBody = [SKPhysicsBody bodyWithTexture:kokos.texture size:kokos.size];
