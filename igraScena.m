@@ -34,6 +34,7 @@
     AVAudioPlayer *flySound;
     AVAudioPlayer *winSound;
     AVAudioPlayer *loseSound;
+    AVAudioPlayer *crashSound;
     
     
    
@@ -65,6 +66,7 @@
     
     flySound = [[AVAudioPlayer alloc]initWithContentsOfURL:flyUrl error:nil];
     [flySound prepareToPlay];
+    flySound.volume = 0.5;
     
     
     NSURL *winUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"WinSound" ofType:@"mp3"]];
@@ -78,6 +80,12 @@
     [loseSound prepareToPlay];
     
     maxScore = 0;
+    
+    NSURL *crashUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"chickenCrashSound" ofType:@"wav"]];
+    
+    crashSound = [[AVAudioPlayer alloc]initWithContentsOfURL:crashUrl error:nil];
+    [crashSound prepareToPlay];
+    crashSound.volume = 2;
     
     
     
@@ -602,6 +610,7 @@
     highScoreString = [NSString stringWithFormat:@"Score: %li", highScore];
     scoreLabela.text = highScoreString;
     [loseSound play];
+    [crashSound play];
 
 
 }

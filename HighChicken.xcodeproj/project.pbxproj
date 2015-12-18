@@ -11,6 +11,7 @@
 		EC17B5371C1C82DB0031980E /* trava.png in Resources */ = {isa = PBXBuildFile; fileRef = EC17B5361C1C82DB0031980E /* trava.png */; };
 		EC17B5391C1C866B0031980E /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = EC17B5381C1C866B0031980E /* start.png */; };
 		EC5AF9621C21BB3A00542C1B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5AF9611C21BB3A00542C1B /* iAd.framework */; };
+		EC5AF9641C246D3A00542C1B /* chickenCrashSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC5AF9631C246D3A00542C1B /* chickenCrashSound.wav */; };
 		EC5CA55D1C1C3E2D00F3A4A1 /* podloga2.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5CA55C1C1C3E2D00F3A4A1 /* podloga2.png */; };
 		EC62F11D1C18BD9100B5657C /* crvenaTipka1.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F11C1C18BD9100B5657C /* crvenaTipka1.png */; };
 		EC62F1221C18EA4500B5657C /* gnijezdo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC62F1211C18EA4500B5657C /* gnijezdo.png */; };
@@ -95,6 +96,7 @@
 		EC17B5361C1C82DB0031980E /* trava.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trava.png; sourceTree = "<group>"; };
 		EC17B5381C1C866B0031980E /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		EC5AF9611C21BB3A00542C1B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		EC5AF9631C246D3A00542C1B /* chickenCrashSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chickenCrashSound.wav; sourceTree = "<group>"; };
 		EC5CA55C1C1C3E2D00F3A4A1 /* podloga2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = podloga2.png; sourceTree = "<group>"; };
 		EC62F11C1C18BD9100B5657C /* crvenaTipka1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crvenaTipka1.png; path = HighChicken/crvenaTipka1.png; sourceTree = "<group>"; };
 		EC62F1211C18EA4500B5657C /* gnijezdo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gnijezdo.png; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 				ECE107081C208E5000437EE3 /* let.mp3 */,
 				ECE107091C208E5000437EE3 /* Rege.mp3 */,
 				ECE1070A1C208E5000437EE3 /* WinSound.mp3 */,
+				EC5AF9631C246D3A00542C1B /* chickenCrashSound.wav */,
 				EC678F921C1891FD003D80D4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -472,6 +475,7 @@
 				EC62F1481C1B31D000B5657C /* kokaCupka4.png in Resources */,
 				EC62F11D1C18BD9100B5657C /* crvenaTipka1.png in Resources */,
 				EC62F12D1C19CF2E00B5657C /* dim.sks in Resources */,
+				EC5AF9641C246D3A00542C1B /* chickenCrashSound.wav in Resources */,
 				ECDE211A1C1DF2DE0031CE5F /* oblak2.png in Resources */,
 				ECDE21191C1DF2DE0031CE5F /* oblak1.png in Resources */,
 				EC5CA55D1C1C3E2D00F3A4A1 /* podloga2.png in Resources */,
