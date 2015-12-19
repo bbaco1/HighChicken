@@ -50,7 +50,6 @@
 		EC7B68CF1C2326EF00239879 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7B68CE1C2326EF00239879 /* facebook.png */; };
 		EC7B68D11C2343BB00239879 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B68D01C2343BB00239879 /* Social.framework */; };
 		EC7B68D31C23444200239879 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B68D21C23444200239879 /* Twitter.framework */; };
-		ECD2C68A1C24778400A96B7F /* chickenN.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6891C24778400A96B7F /* chickenN.png */; };
 		ECD2C6971C24814300A96B7F /* podloga1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C68B1C24814300A96B7F /* podloga1.png */; };
 		ECD2C6981C24814300A96B7F /* podloga2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C68C1C24814300A96B7F /* podloga2.png */; };
 		ECD2C6991C24814300A96B7F /* podloga3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C68D1C24814300A96B7F /* podloga3.png */; };
@@ -64,6 +63,7 @@
 		ECD2C6A11C24814300A96B7F /* podloga11.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6951C24814300A96B7F /* podloga11.png */; };
 		ECD2C6A21C24814300A96B7F /* podloga12.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6961C24814300A96B7F /* podloga12.png */; };
 		ECD2C6A41C254BCB00A96B7F /* trava.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6A31C254BCB00A96B7F /* trava.png */; };
+		ECD2C6A61C25918D00A96B7F /* chickenN.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6A51C25918D00A96B7F /* chickenN.png */; };
 		ECDE20DE1C1CAA110031CE5F /* ograda.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE20DD1C1CAA110031CE5F /* ograda.png */; };
 		ECDE21191C1DF2DE0031CE5F /* oblak1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21141C1DF2DE0031CE5F /* oblak1.png */; };
 		ECDE211A1C1DF2DE0031CE5F /* oblak2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDE21151C1DF2DE0031CE5F /* oblak2.png */; };
@@ -158,7 +158,6 @@
 		EC7B68CE1C2326EF00239879 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		EC7B68D01C2343BB00239879 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		EC7B68D21C23444200239879 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		ECD2C6891C24778400A96B7F /* chickenN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chickenN.png; sourceTree = "<group>"; };
 		ECD2C68B1C24814300A96B7F /* podloga1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = podloga1.png; sourceTree = "<group>"; };
 		ECD2C68C1C24814300A96B7F /* podloga2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = podloga2.png; sourceTree = "<group>"; };
 		ECD2C68D1C24814300A96B7F /* podloga3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = podloga3.png; sourceTree = "<group>"; };
@@ -172,6 +171,7 @@
 		ECD2C6951C24814300A96B7F /* podloga11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = podloga11.png; sourceTree = "<group>"; };
 		ECD2C6961C24814300A96B7F /* podloga12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = podloga12.png; sourceTree = "<group>"; };
 		ECD2C6A31C254BCB00A96B7F /* trava.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trava.png; sourceTree = "<group>"; };
+		ECD2C6A51C25918D00A96B7F /* chickenN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chickenN.png; sourceTree = "<group>"; };
 		ECDE20DD1C1CAA110031CE5F /* ograda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ograda.png; sourceTree = "<group>"; };
 		ECDE21141C1DF2DE0031CE5F /* oblak1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak1.png; sourceTree = "<group>"; };
 		ECDE21151C1DF2DE0031CE5F /* oblak2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oblak2.png; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 		EC62F11E1C18BD9A00B5657C /* slike */ = {
 			isa = PBXGroup;
 			children = (
-				ECD2C6891C24778400A96B7F /* chickenN.png */,
+				ECD2C6A51C25918D00A96B7F /* chickenN.png */,
 				EC62F11C1C18BD9100B5657C /* crvenaTipka1.png */,
 				EC62F12B1C19CF2E00B5657C /* dim.sks */,
 				EC7B68CE1C2326EF00239879 /* facebook.png */,
@@ -482,7 +482,6 @@
 				EC62F12E1C19CF2E00B5657C /* spark.png in Resources */,
 				ECD2C6A41C254BCB00A96B7F /* trava.png in Resources */,
 				ECD2C69F1C24814300A96B7F /* podloga9.png in Resources */,
-				ECD2C68A1C24778400A96B7F /* chickenN.png in Resources */,
 				ECFB9CCD1C1DEBE6008A3E96 /* youWin.png in Resources */,
 				ECD2C69B1C24814300A96B7F /* podloga5.png in Resources */,
 				EC62F13B1C1B31B300B5657C /* kokaLeti2.png in Resources */,
@@ -529,6 +528,7 @@
 				ECDE211A1C1DF2DE0031CE5F /* oblak2.png in Resources */,
 				ECDE21191C1DF2DE0031CE5F /* oblak1.png in Resources */,
 				EC62F13E1C1B31B300B5657C /* kokaLeti5.png in Resources */,
+				ECD2C6A61C25918D00A96B7F /* chickenN.png in Resources */,
 				EC5AF9661C247D0100542C1B /* tapToPlay.png in Resources */,
 				EC6AB57E1C1F1A920023C80A /* kokaPala2.png in Resources */,
 				ECD2C69C1C24814300A96B7F /* podloga6.png in Resources */,
