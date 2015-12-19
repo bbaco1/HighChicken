@@ -193,7 +193,7 @@
     [self addChild:pod];
 
     sjena = [SKSpriteNode spriteNodeWithImageNamed:@"sjena"];
-    sjena.size = CGSizeMake(80, 15);
+    sjena.size = CGSizeMake(self.size.height/7, 15);
     sjena.position = CGPointMake(kokos.position.x, pod.position.y+5);
     sjena.zPosition = 4;
     sjena.alpha = 0.6;
@@ -259,7 +259,7 @@
 -(void) dodajOgradu{
 
     SKSpriteNode *trava = [SKSpriteNode spriteNodeWithImageNamed:@"trava"];
-    trava.size = CGSizeMake(self.size.width, self.size.height/5);
+    trava.size = CGSizeMake(self.size.width, self.size.height/4.8);
     trava.position = CGPointMake(self.size.width/2, trava.size.height/2);
     trava.zPosition = 1;
     
@@ -273,7 +273,7 @@
 
     SKSpriteNode *kuca = [SKSpriteNode spriteNodeWithImageNamed:@"kucica"];
     kuca.size = CGSizeMake(self.size.width/3, self.size.height/6);
-    kuca.position = CGPointMake(kuca.size.width/2+30, trava.size.height-10 + kuca.size.height/2);
+    kuca.position = CGPointMake(kuca.size.width/2+30,trava.position.y+trava.size.height/2.8 + kuca.size.height/2);
     kuca.zPosition = 2;
     
     if (platforma == 4) {
